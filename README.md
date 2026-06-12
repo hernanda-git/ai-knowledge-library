@@ -2,7 +2,7 @@
 
 The most comprehensive AI knowledge base — markdown documents covering the entire modern AI landscape.
 
-> **79 documents | 15 topic directories | 29K+ new lines added | Self-contained | Public**
+> **119 documents | 17 topic directories | Self-contained | Public**
 
 ## Repository Structure
 
@@ -20,6 +20,10 @@ The most comprehensive AI knowledge base — markdown documents covering the ent
 ├── 11-AI-Applications/    # Healthcare, Finance, Manufacturing, Education, Retail, etc.
 ├── 12-Business-Prospects/ # Market analysis, VC, business models, ROI
 ├── 13-Top-Demand/         # Current in-demand AI skills & trends (June 2026)
+├── 14-Case-Studies-Real-World-Projects/  # End-to-end implementations with metrics & templates
+├── 15-Community-Resources-Templates/     # SOUL/SKILL, prompts, agent toolkits, awesome repos, 2026 roadmap
+├── 16-AI-Business-Models-Playbooks/      # SaaS, consulting, GTM, pricing, funding templates
+├── 17-Research-Frontiers-2026/           # Latest arXiv papers with Implications sections
 ├── 09-Evolution-of-AI-Adoption.md  # History & evolution of AI adoption
 ├── Complete-Study-Reference.html    # Single-page study reference
 └── ai-library/            # Static web portal generator
@@ -45,6 +49,10 @@ The most comprehensive AI knowledge base — markdown documents covering the ent
 | 11-AI-Applications | Healthcare, Finance, Manufacturing, Education, Retail & more |
 | 12-Business-Prospects | Market analysis, VC trends, AI business models |
 | 13-Top-Demand | Current in-demand AI skills & tools (June 2026) |
+| 14-Case-Studies-Real-World-Projects | End-to-end implementations with code repos, metrics, ROI, lessons learned, project templates |
+| 15-Community-Resources-Templates | SOUL/SKILL templates, prompt libraries, agent toolkits, awesome repos, 2026 roadmap |
+| 16-AI-Business-Models-Playbooks | SaaS/consulting/GTM playbooks, pricing models, pitch templates |
+| 17-Research-Frontiers-2026 | Latest arXiv paper summaries with practitioner implications |
 
 ## Browse the Library
 
