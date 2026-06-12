@@ -2,7 +2,7 @@
 
 The most comprehensive AI knowledge base — markdown documents covering the entire modern AI landscape.
 
-> **47 documents | 12 topic directories | Self-contained | Public**
+> **50 documents | 15 topic directories | Self-contained | Public**
 
 ## Repository Structure
 
@@ -17,6 +17,9 @@ The most comprehensive AI knowledge base — markdown documents covering the ent
 ├── 08-Reference/          # Glossary, AI Roadmap, SOUL.md / SKILL.md
 ├── 09-Papers/             # 50+ Foundational AI Papers
 ├── 10-Industry/           # AI Industry Applications, Economics, Robotics
+├── 11-AI-Applications/    # Healthcare, Finance, Manufacturing, Education, Retail, etc.
+├── 12-Business-Prospects/ # Market analysis, VC, business models, ROI
+├── 13-Top-Demand/         # Current in-demand AI skills & trends (June 2026)
 ├── 09-Evolution-of-AI-Adoption.md  # History & evolution of AI adoption
 ├── Complete-Study-Reference.html    # Single-page study reference
 └── ai-library/            # Static web portal generator
@@ -39,6 +42,9 @@ The most comprehensive AI knowledge base — markdown documents covering the ent
 | 08-Reference | Glossary, Roadmap, Agent Configs (SOUL/SKILL) |
 | 09-Papers | Foundational Papers (50+ summaries) |
 | 10-Industry | Industry Applications, AI Economics, Robotics |
+| 11-AI-Applications | Healthcare, Finance, Manufacturing, Education, Retail & more |
+| 12-Business-Prospects | Market analysis, VC trends, AI business models |
+| 13-Top-Demand | Current in-demand AI skills & tools (June 2026) |
 
 ## Browse the Library
 
