@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Library of Alexandria — Complete Study Reference</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0b; --bg2: #121214; --bg3: #1a1a1e; --bg4: #222228; --bd: #2a2a30;
+    --tx1: #f4f4f5; --tx2: #a1a1aa; --tx3: #71717a;
+    --ac: #6366f1; --ac2: #818cf8; --ac3: #4f46e5;
+    --gn: #22c55e; --gnb: rgba(34,197,94,0.1);
+    --or: #f59e0b; --orb: rgba(245,158,11,0.1);
+    --rd: #ef4444; --rdb: rgba(239,68,68,0.1);
+    --yl: #eab308; --ylb: rgba(234,179,8,0.1);
+    --cy: #06b6d4; --cyb: rgba(6,182,212,0.1);
+    --pu: #a855f7; --pub: rgba(168,85,247,0.1);
+    --r: 12px; --rs: 8px; --rx: 4px;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--tx1); line-height:1.7; -webkit-font-smoothing:antialiased; }
+  .ct { max-width:1100px; margin:0 auto; padding:80px 24px 100px; }
+
+  /* NAV */
+  .nv { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(10,10,11,0.88); backdrop-filter:blur(24px); border-bottom:1px solid var(--bd); padding:0 20px; height:52px; display:flex; align-items:center; gap:12px; overflow-x:auto; }
+  .nv-b { font-size:13px; font-weight:700; display:flex; align-items:center; gap:8px; white-space:nowrap; }
+  .nv-b .b { background:var(--ac); color:#fff; font-size:9px; font-weight:700; padding:2px 7px; border-radius:100px; }
+  .nv a { color:var(--tx3); text-decoration:none; font-size:11px; font-weight:500; padding:4px 8px; border-radius:5px; white-space:nowrap; transition:all .15s; }
+  .nv a:hover { color:var(--tx1); background:var(--bg4); }
+
+  /* HERO */
+  .hr { padding:48px 0 36px; border-bottom:1px solid var(--bd); margin-bottom:40px; }
+  .hr .t { display:inline-block; background:rgba(99,102,241,0.1); color:var(--ac2); font-size:11px; font-weight:600; padding:3px 10px; border-radius:100px; letter-spacing:.4px; text-transform:uppercase; margin-bottom:12px; }
+  .hr h1 { font-size:34px; font-weight:800; line-height:1.15; letter-spacing:-.8px; background:linear-gradient(135deg,#f4f4f5 0%,#a1a1aa 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  .hr h1 .hl { background:linear-gradient(135deg,var(--ac2),var(--pu)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+  .hr p { font-size:15px; color:var(--tx2); margin-top:12px; max-width:650px; }
+
+  .sg { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
+  .sg .st { flex:1; min-width:100px; background:var(--bg3); border:1px solid var(--bd); border-radius:var(--rs); padding:12px; text-align:center; }
+  .sg .st .n { font-size:22px; font-weight:800; }
+  .sg .st .l { font-size:10px; color:var(--tx3); text-transform:uppercase; letter-spacing:.5px; margin-top:2px; }
+
+  /* SECTION */
+  .s { margin-bottom:40px; }
+  .sh { display:flex; align-items:center; gap:12px; margin-bottom:20px; padding-bottom:10px; border-bottom:1px solid var(--bd); }
+  .sh .i { width:32px; height:32px; border-radius:8px; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; }
+  .sh .i.s1 { background:rgba(99,102,241,0.15);color:var(--ac2); }
+  .sh .i.s2 { background:var(--gnb);color:var(--gn); }
+  .sh .i.s3 { background:var(--pub);color:var(--pu); }
+  .sh .i.s4 { background:var(--cyb);color:var(--cy); }
+  .sh .i.s5 { background:var(--orb);color:var(--or); }
+  .sh .i.s6 { background:var(--ylb);color:var(--yl); }
+  .sh .i.s7 { background:var(--rdb);color:var(--rd); }
+  .sh .i.s8 { background:var(--gnb);color:var(--gn); }
+  .sh .i.s9 { background:var(--pub);color:var(--pu); }
+  .sh .i.s10 { background:var(--cyb);color:var(--cy); }
+  .sh .t { font-size:18px; font-weight:700; letter-spacing:-.3px; }
+  .sh .tl { font-size:11px; color:var(--tx3); margin-left:auto; white-space:nowrap; }
+
+  /* CARDS */
+  .c { background:var(--bg3); border:1px solid var(--bd); border-radius:var(--r); padding:20px; margin-bottom:12px; transition:border-color .2s; }
+  .c:hover { border-color:rgba(99,102,241,0.2); }
+  .c h3 { font-size:15px; font-weight:600; margin-bottom:8px; display:flex; align-items:center; gap:8px; }
+  .c h3 .ln { font-size:11px; color:var(--tx3); font-weight:400; }
+  .c h4 { font-size:13px; font-weight:600; margin:14px 0 6px; color:var(--ac2); }
+  .c p, .c li { font-size:13px; color:var(--tx2); line-height:1.65; }
+  .c p + p { margin-top:8px; }
+  .c ul { list-style:none; padding:0; }
+  .c ul li { padding:2px 0 2px 16px; position:relative; }
+  .c ul li::before { content:''; position:absolute; left:0; top:10px; width:4px; height:4px; border-radius:50%; background:var(--tx3); }
+  .c .l { display:inline-block; font-size:10px; font-weight:600; padding:2px 7px; border-radius:100px; letter-spacing:.2px; margin-right:3px; }
+  .c .l.lr { background:var(--rdb);color:var(--rd); }
+  .c .l.lo { background:var(--orb);color:var(--or); }
+  .c .l.ly { background:var(--ylb);color:var(--yl); }
+  .c .l.lg { background:var(--gnb);color:var(--gn); }
+  .c .l.lb { background:rgba(59,130,246,0.1);color:#60a5fa; }
+  .c .l.lp { background:var(--pub);color:var(--pu); }
+  .c .l.lc { background:var(--cyb);color:var(--cy); }
+
+  .tb { overflow-x:auto; margin:8px 0; border-radius:var(--rs); border:1px solid var(--bd); }
+  table { width:100%; border-collapse:collapse; font-size:12.5px; }
+  thead th { text-align:left; padding:8px 12px; font-weight:600; color:var(--tx3); border-bottom:1px solid var(--bd); font-size:10px; text-transform:uppercase; letter-spacing:.4px; background:rgba(255,255,255,0.02); }
+  tbody td { padding:7px 12px; border-bottom:1px solid rgba(42,42,48,0.35); color:var(--tx2); }
+  tbody tr:last-child td { border-bottom:none; }
+  tbody tr:hover td { background:var(--bg4); }
+  tbody td:first-child { font-weight:500; color:var(--tx1); white-space:nowrap; }
+
+  .ic { background:rgba(255,255,255,0.05); border:1px solid var(--bd); border-radius:var(--rx); padding:1px 5px; font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--ac2); }
+  .cb { background:#111; border:1px solid var(--bd); border-radius:var(--rs); padding:14px; margin:8px 0; font-family:'JetBrains Mono',monospace; font-size:12px; line-height:1.6; overflow-x:auto; color:#e4e4e7; }
+  .cb .c { color:#6b7280; } .cb .k { color:#818cf8; } .cb .s { color:#a5d6a7; }
+  .cb .o { color:#f59e0b; } .cb .t { color:#6ee7b7; }
+
+  .bq { border-left:3px solid var(--ac); padding:12px 16px; margin:8px 0; background:rgba(99,102,241,0.03); border-radius:0 var(--rs) var(--rs) 0; font-size:13px; color:var(--tx2); line-height:1.6; }
+  .bq strong { color:var(--tx1); }
+
+  .g2 { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .g3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; }
+  @media (max-width:680px) { .g2, .g3 { grid-template-columns:1fr; } }
+  .gc { background:var(--bg3); border:1px solid var(--bd); border-radius:var(--rs); padding:14px; text-align:center; }
+  .gc .icn { font-size:22px; margin-bottom:4px; }
+  .gc h4 { font-size:12px; font-weight:600; margin-bottom:2px; }
+  .gc p { font-size:11px; color:var(--tx3); line-height:1.5; }
+
+  .kp { display:flex; gap:10px; align-items:flex-start; background:var(--bg3); border:1px solid var(--bd); border-radius:var(--rs); padding:12px 14px; margin-bottom:8px; }
+  .kp .ki { width:24px; height:24px; border-radius:5px; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:11px; }
+  .kp .kt { font-size:12.5px; color:var(--tx2); line-height:1.5; }
+  .kp .kt strong { color:var(--tx1); }
+
+  .fl { display:flex; flex-direction:column; align-items:center; gap:2px; padding:12px; font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--tx2); text-align:center; }
+  .fl .bx { background:var(--bg3); border:1px solid var(--bd); border-radius:var(--rx); padding:5px 12px; color:var(--tx1); font-weight:500; display:inline-block; font-size:10.5px; }
+  .fl .ar { color:var(--tx3); font-size:12px; }
+  .fl .bx.a { border-color:var(--ac); }
+  .fl .bx.g { border-color:var(--gn); }
+  .fl .bx.o { border-color:var(--or); }
+
+  .cl { background:rgba(99,102,241,0.06); border:1px solid rgba(99,102,241,0.18); border-radius:var(--rs); padding:12px 16px; margin:8px 0; font-size:13px; color:var(--ac2); line-height:1.6; }
+  .cl.warn { background:var(--orb); border-color:rgba(245,158,11,0.18); color:var(--or); }
+  .cl.good { background:var(--gnb); border-color:rgba(34,197,94,0.18); color:var(--gn); }
+  .cl strong { color:var(--tx1); }
+
+  .ft { margin-top:60px; padding-top:24px; border-top:1px solid var(--bd); text-align:center; color:var(--tx3); font-size:12px; line-height:1.8; }
+
+  ::-webkit-scrollbar { width:5px; height:5px; }
+  ::-webkit-scrollbar-track { background:transparent; }
+  ::-webkit-scrollbar-thumb { background:var(--bd); border-radius:3px; }
+  ::-webkit-scrollbar-thumb:hover { background:var(--tx3); }
+
+  .arch { background:var(--bg3); border:1px solid var(--bd); border-radius:var(--r); padding:16px; margin:8px 0; font-family:'JetBrains Mono',monospace; font-size:10.5px; line-height:1.45; overflow-x:auto; white-space:pre; color:var(--tx2); }
+  .tag { display:inline-block; font-size:10px; font-weight:500; padding:2px 8px; border-radius:100px; letter-spacing:.15px; }
+  .tag.ac { background:rgba(99,102,241,0.1); color:var(--ac2); border:1px solid rgba(99,102,241,0.15); }
+  .tag.gn { background:var(--gnb); color:var(--gn); border:1px solid rgba(34,197,94,0.15); }
+</style>
+</head>
+<body>
+
+<nav class="nv">
+  <div class="nv-b"><span>📖 AI Library</span><span class="b">46 Docs</span></div>
+  <a href="#f1">Foundations</a><a href="#f2">LLMs</a><a href="#f3">Agents</a><a href="#f4">RAG</a><a href="#f5">Enterprise</a><a href="#f6">Advanced</a><a href="#f7">Emerging</a><a href="#f8">Reference</a><a href="#f9">Papers</a><a href="#f10">Industry</a>
+</nav>
+
+<div class="ct">
+
+<!-- HERO -->
+<div class="hr">
+  <div class="t">AI Library of Alexandria</div>
+  <h1>Complete Study Reference — <span class="hl">46 Documents</span></h1>
+  <p>A unified, cross-referenced knowledge base covering the entire AI stack — from mathematical foundations and deep learning to LLMs, agents, RAG, enterprise deployment, multimodal AI, safety, interpretability, and the future roadmap. Auto-enriched every 12 hours.</p>
+  <div class="sg">
+    <div class="st"><div class="n" style="color:var(--ac2)">46</div><div class="l">Documents</div></div>
+    <div class="st"><div class="n" style="color:var(--gn)">53,404</div><div class="l">Total Lines</div></div>
+    <div class="st"><div class="n" style="color:var(--or)">10</div><div class="l">Directories</div></div>
+    <div class="st"><div class="n" style="color:var(--cy)">2.1</div><div class="l">MB of Knowledge</div></div>
+  </div>
+</div>
+
+<!-- ===================== FOUNDATIONS ===================== -->
+<div class="s" id="f1">
+<div class="sh"><div class="i s1">1</div><div class="t">01-Foundations — 10 Documents</div><div class="tl">10,324 lines</div></div>
+
+<div class="c"><h3>📍 01-Machine-Learning.md <span class="ln">— 1,960 lines</span></h3><p><strong>Core ML:</strong> Supervised learning (linear regression, SVMs, decision trees, random forests, gradient boosting, neural networks), unsupervised learning (k-means, DBSCAN, hierarchical, PCA, t-SNE, UMAP, autoencoders), semi-supervised learning (self-training, co-training, label propagation), self-supervised learning (contrastive, pretext tasks, masked modeling), reinforcement learning, statistical learning theory (VC dimension, bias-variance tradeoff, PAC learning), loss functions (MSE, MAE, Huber, cross-entropy, hinge, contrastive, triplet), optimization (SGD, momentum, Adam, AdamW, RMSprop, Newton, BFGS, L-BFGS), regularization (L1/L2, dropout, batch norm, early stopping, data augmentation, label smoothing), cross-validation (k-fold, LOOCV, stratified), ensemble methods (bagging, boosting, stacking, Bayesian model averaging).</p></div>
+
+<div class="c"><h3>📍 02-Deep-Learning.md <span class="ln">— 2,115 lines</span></h3><p><strong>Deep Learning:</strong> Perceptron→MLP→CNN→RNN→LSTM→GRU→Transformer evolution. Backpropagation (chain rule, automatic differentiation, vanishing/exploding gradients). CNN architectures (LeNet, AlexNet, VGG, ResNet, Inception, DenseNet, EfficientNet, MobileNet, ConvNeXt). Regularization for deep learning (dropout, stochastic depth, label smoothing, weight decay, gradient clipping). Normalization (batch, layer, instance, group, weight normalization). Attention (Bahdanau, Luong, self-attention, multi-head, cross-attention, sparse attention, linear attention). Sequence models (RNN, BPTT, LSTM gates, GRU, bidirectional, seq2seq with attention).</p></div>
+
+<div class="c"><h3>📍 03-Training-Methodologies.md <span class="ln">— 3,275 lines</span></h3><p><strong>Training:</strong> Pre-training (data preparation, loss functions, scaling laws, Chinchilla optimal, compute budgets), fine-tuning (full, LoRA, QLoRA, DoRA, AdaLoRA, LoRA-XS, PiSSA, (IA)³, prefix tuning, prompt tuning, P-tuning v2, adapter), instruction tuning, RLHF (reward modeling, PPO, KL penalty), DPO and variants (IPO, KTO, ORPO, SimPO, CPO, GRPO), alignment (Constitutional AI, RLAIF). Scaling laws (Kaplan, Chinchilla, inference compute optimal). Multi-stage training, curriculum learning, annealing.</p></div>
+
+<div class="c"><h3>📍 04-LLM-and-AI-Models.md <span class="ln">— 1,387 lines</span></h3><p><strong>LLMs:</strong> What is an LLM, Transformer architecture deep dive (tokenization, embeddings, positional encoding, self-attention, multi-head attention, FFN, layer norm, decoder-only). Training pipeline (pre-training, SFT, RLHF, DPO). Model types (base vs instruct, chat templates). Model sizes (parameters, memory requirements, MoE). Quantization (FP32/16/8, INT8/4, NF4, GGUF, GPTQ, AWQ, AQLM, QuIP#). Inference (decoding strategies, context window, KV cache, vLLM, llama.cpp, Ollama, TensorRT-LLM, TGI). Prompt engineering library (zero-shot, few-shot, CoT, ToT, GoT, ReAct, Reflexion, self-consistency, PAL, skeleton-of-thought). Speculative decoding. Model merging (TIES, DARE, Model Soups, WARM).</p></div>
+
+<div class="c"><h3>📍 05-Data-Engineering.md <span class="ln">— 626 lines</span></h3><p><strong>Data Engineering:</strong> Data collection (web crawling, Common Crawl, licensed data, domain-specific). Quality filtering (heuristic, perplexity, quality classifiers, FineWeb signals). Deduplication (exact, near-deduplication via MinHash/SimHash, embedding-based). Decontamination (n-gram matching, embedding-based, training dynamics). Data mixing (optimal ratios from major models). Curriculum learning (ordering, annealing, DSIR, DoReMi). Synthetic data (Self-Instruct, Evol-Instruct, model collapse). Annotation platforms and QC. Data governance (copyright, PII handling, licensing). Data infrastructure (storage, processing frameworks, loaders).</p></div>
+
+<div class="c"><h3>📍 06-Reinforcement-Learning.md <span class="ln">— 350 lines</span></h3><p><strong>RL:</strong> MDPs, Bellman equations, dynamic programming (policy iteration, value iteration), model-free prediction (MC, TD, TD(λ)), model-free control (Q-learning, SARSA, exploration strategies), function approximation (linear, neural), DQN (experience replay, target network, Double DQN, Dueling DQN, Prioritized Replay, Rainbow), policy gradients (REINFORCE, policy gradient theorem), actor-critic (A2C, A3C, PPO, SAC), model-based RL (Dyna, MuZero), inverse RL (behavioral cloning, IRL, GAIL), multi-agent RL (IQL, VDN, QMIX, MADDPG, MAPPO), RLHF (PPO for LLMs, GRPO), RL for robotics (sim-to-real, RT-2, Octo).</p></div>
+
+<div class="c"><h3>📍 07-Graph-Neural-Networks.md <span class="ln">— 167 lines</span></h3><p><strong>GNNs:</strong> Graph theory, message-passing framework, over-smoothing. Convolutional GNNs (GCN, GraphSAGE, GIN), attentional GNNs (GAT, GATv2), spectral methods (ChebNet). Graph pooling (Top-K, DiffPool, SAGPool, MinCut). Scalability (Cluster-GCN, GraphSAINT). Graph generative models (MoFlow, DiGress, GCPN). Applications: drug discovery, fraud detection, recommendation, knowledge graphs, traffic, physics, code analysis.</p></div>
+
+<div class="c"><h3>📍 08-Mathematics-for-ML.md <span class="ln">— 172 lines</span></h3><p><strong>Math:</strong> Linear algebra (vectors, matrices, eigenvalues/SVD, matrix calculus, rank, low-rank approximation), probability theory (basic rules, distributions — Bernoulli, Gaussian, Binomial, Dirichlet, Exponential; Bayes' theorem, MLE, MAP), calculus (derivatives, chain rule, gradients, Jacobian, Hessian), statistics (hypothesis testing, t-test, ANOVA, χ², confidence intervals), information theory (entropy, cross-entropy, KL divergence, mutual information), optimization (SGD, momentum, Adam, AdamW, RMSprop, convex vs non-convex, Lagrangian duality).</p></div>
+
+<div class="c"><h3>📍 09-Federated-Learning-Privacy.md <span class="ln">— 148 lines</span></h3><p><strong>Privacy ML:</strong> Federated learning (FedAvg, data heterogeneity, communication cost, security). Frameworks (Flower, TFF, PySyft, OpenFL, FATE, NVIDIA FLARE). Differential privacy (ε-definition, Laplace/Gaussian mechanisms, DP-SGD, cost). Secure MPC (garbled circuits, secret sharing, oblivious transfer). Homomorphic encryption (PHE, SWHE, FHE, leveled). LLM privacy (membership inference, data extraction, defenses, RANTEXT, DP-Prompt).</p></div>
+
+<div class="c"><h3>📍 10-Causal-Inference.md <span class="ln">— 124 lines</span></h3><p><strong>Causal:</strong> Causal vs statistical (P(Y|X) vs P(Y|do(X))). Causal graphs (chains, forks, colliders, d-separation, DAGs). Potential outcomes (ATE, CATE, SUTVA, ignorability, positivity). Treatment effect estimation (RCT, matching, propensity score, IPW, doubly robust, IV, DiD, RDD). Causal ML (S-learner, T-learner, X-learner, uplift trees, causal forest). Causal discovery (PC, GES, LiNGAM, NOTEARS, DAG-GNN).</p></div>
+</div>
+
+<!-- ===================== LLMs ===================== -->
+<div class="s" id="f2">
+<div class="sh"><div class="i s2">2</div><div class="t">02-LLMs — 5 Documents</div><div class="tl">7,892 lines</div></div>
+
+<div class="c"><h3>📍 01-Transformer-Architecture.md <span class="ln">— 1,388 lines</span></h3><p><strong>Transformer:</strong> Historical context (RNN limitations). Scaled dot-product attention (Q/K/V, softmax, scaling factor). Multi-head attention (parallel heads, concatenation, projection). Positional encoding (sinusoidal, learned, RoPE, ALiBi, T5 relative bias). Encoder architecture (self-attention, FFN, add&norm). Decoder architecture (masked self-attention, cross-attention). Cross-attention (encoder-decoder). FFN (ReLU, GELU, SwiGLU, GLU variants). Layer normalization (LayerNorm, RMSNorm, pre-norm vs post-norm). Residual connections. Label smoothing. Masking mechanisms (padding, causal, n-gram, band). Advantages over RNNs/CNNs. Complexity analysis. Innovations (FlashAttention 1/2/3, GQA, MQA, MLA, sparse attention, linear attention, sliding window). Training dynamics. Implementation (mixed precision, gradient checkpointing, activation partitioning). Variants (encoder-only BERT, decoder-only GPT, encoder-decoder T5).</p></div>
+
+<div class="c"><h3>📍 02-Model-Families.md <span class="ln">— 2,343 lines</span></h3><p><strong>Model Families:</strong> Full comparison of every major model family with architecture details, training data, benchmarks. GPT series (GPT-1, GPT-2, GPT-3, GPT-3.5, GPT-4, GPT-4o, GPT-4.1, o1, o3, o4-mini). LLaMA series (1, 2, 3, 3.1, 4). Claude series (1, 2, 3 Haiku/Sonnet/Opus, 4). Gemini series (1.0, 1.5, 2.0, 2.5). DeepSeek series (V2, V3, R1, Coder, VL2). Mistral (7B, Mixtral 8x7B/8x22B, Large). Qwen series (1, 1.5, 2, 2.5, Coder, VL). BERT series (BERT, RoBERTa, ALBERT, DistilBERT, ELECTRA). T5 series (T5, Flan-T5, UL2). MoE models compared. Benchmark comparison tables (MMLU, GSM8K, HumanEval, MATH, HellaSwag, ARC, BBH, MT-Bench). 20-dimension comparison of all families.</p></div>
+
+<div class="c"><h3>📍 03-Tokenization.md <span class="ln">— 1,962 lines</span></h3><p><strong>Tokenization:</strong> BPE (GPT-2, GPT-4, LLaMA, Mistral, DeepSeek), WordPiece (BERT), Unigram (XLNet, T5, AlBERT), SentencePiece (LLaMA, Gemma, T5). Byte-level vs character-level vs subword. tiktoken (GPT-4, GPT-4o, o1, o3). Tokenizer training (BPE merge algorithm, unigram EM training). Vocabulary sizes across models (32K to 256K). Special tokens (BOS, EOS, UNK, PAD, MASK, SEP, CLS, PAD). Handling multilingual text, code, math (GPT-4o's extended vocabulary, Gemma's tokenizer optimization). Tokenization pitfalls (token accounting, whitespace handling, numbers split oddly). Impact on model behavior and cost. Comparison table of 25+ tokenizers.</p></div>
+
+<div class="c"><h3>📍 04-Quantization.md <span class="ln">— 1,974 lines</span></h3><p><strong>Quantization:</strong> Precision types (FP32, BF16, FP16, FP8 E4M3/E5M2, INT8, INT4, INT2, NF4, ternary, binary). Post-training quantization (PTQ: absmax, zeropoint, per-tensor/channel/group). Quantization-aware training (QAT: straight-through estimator, LSQ). Formats: GGUF (llama.cpp ecosystem), GPTQ (layer-wise quantization, Hessian-based), AWQ (activation-aware, per-group), bitsandbytes (8-bit, 4-bit NF4, double quantization), AQLM (2-bit, codebook-based), QuIP# (2-bit with incoherence processing), DB-LLM (1.58-bit ternary). Hardware support (NVIDIA, AMD, Intel, Apple, Qualcomm). Calibration datasets. Quantization vs model quality tradeoffs. Mixed precision. Practical guidelines (which format for which use case).</p></div>
+
+<div class="c"><h3>📍 05-NLP-Foundations.md <span class="ln">— 225 lines</span></h3><p><strong>NLP:</strong> Text preprocessing (tokenization, normalization, stemming, lemmatization, sentence segmentation). Word representations (one-hot, TF-IDF, Word2Vec, GloVe, fastText, ELMo, BERT). Syntactic analysis (POS tagging, constituency parsing, dependency parsing). Semantic analysis (SRL, NER, coreference resolution). Sequence labeling (HMM, CRF, BiLSTM-CRF, Transformer). Text classification (Naive Bayes, SVM, CNN, BiLSTM, BERT). Information extraction (relation extraction, Open IE, event extraction). Machine translation (rule-based, SMT, NMT, Transformer, LLM-based). Summarization (extractive vs abstractive, BERT, BART, Pegasus, T5). QA (extractive, abstractive, open-domain, RAG). Dialogue systems (task-oriented, chit-chat, LLM-powered).</p></div>
+</div>
+
+<!-- ===================== AGENTS ===================== -->
+<div class="s" id="f3">
+<div class="sh"><div class="i s3">3</div><div class="t">03-Agents — 5 Documents</div><div class="tl">8,085 lines</div></div>
+
+<div class="c"><h3>📍 01-Agent-Architectures.md <span class="ln">— 1,063 lines</span></h3><p><strong>Agents & Orchestrators:</strong> AI Agent definition (perceives, thinks, acts, learns). Core characteristics (autonomy, tool-use, reasoning, memory, planning). Types (reactive, goal-oriented, utility-based, learning agents). Architectures (ReAct: interleaved reasoning + acting, Plan-and-Execute: separate planner + executor, Reflection: self-critique, Hybrid). Frameworks (LangChain, CrewAI, AutoGen, Semantic Kernel, OpenAI Assistants API, Dify, MetaGPT, smolagents, DSPy). <strong>AI Orchestrator</strong> definition — meta-agent that manages agents. <strong>Agent vs Orchestrator</strong> comparison across 8 dimensions (scope, autonomy, complexity, delegation, error handling, state). Orchestrator workflow: 8-step process (goal analysis → task decomposition → subagent assignment → parallel execution → result collection → re-prioritization/iteration → synthesis → delivery + learning). 5 orchestration patterns: sequential, parallel (fan-out), hierarchical, recursive, hybrid.</p></div>
+
+<div class="c"><h3>📍 02-Multi-Agent-Systems.md <span class="ln">— 2,722 lines</span></h3><p><strong>Multi-Agent:</strong> Architectures (centralized, decentralized, hierarchical). Communication patterns (message passing, shared memory, blackboard, publish-subscribe). Coordination (negotiation, auctions, consensus, voting, market-based). Task decomposition (top-down, bottom-up, hierarchical, contract net). Agent roles (manager/coordinator, specialist/worker, reviewer/validator, aggregator/synthesizer). Multi-agent topologies (star, mesh, tree, ring, hybrid). Consensus mechanisms (majority, weighted, BFT, RAFT for agents). Multi-agent debate, mixture of agents (MoA). Hallucination reduction through multi-agent disagreement. Frameworks compared (AutoGen group chats, CrewAI processes, LangGraph state machines, Semantic Kernel planners). Real-world architectures for agent teams.</p></div>
+
+<div class="c"><h3>📍 03-Agentic-Frameworks.md <span class="ln">— 2,513 lines</span></h3><p><strong>Frameworks:</strong> Deep dives into each major framework: <strong>LangGraph</strong> (state graphs, conditional edges, nodes, checkpointing, persistent state, streaming, human-in-the-loop). <strong>CrewAI</strong> (role-based agents, tasks, processes — sequential, hierarchical; tools, guardrails, delegation). <strong>AutoGen</strong> (conversable agents, group chat, manager agent, code executors, tools). <strong>Semantic Kernel</strong> (plugins, planners — sequential, function-calling, stepwise; connectors, memory, filters). <strong>smolagents</strong> (code agents, tool calling, multi-agent, Gradio UI). <strong>DSPy</strong> (prompt optimization, modules, teleprompters — COPRO, MIPROv2, BootstrapFinetune; compilers). <strong>OpenAI Agents SDK</strong> (handoffs, guardrails, tracing, agents as tools). Comparison: 20 dimension comparison table across all frameworks. Decision matrix per use case.</p></div>
+
+<div class="c"><h3>📍 04-Protocols-MCP-ACP.md <span class="ln">— 1,121 lines</span></h3><p><strong>MCP & ACP:</strong> <strong>MCP</strong> (Anthropic): 3-tier architecture (Host→Client→Server). Transport: stdio (child process, stdin/stdout), SSE (HTTP streaming). Lifecycle: initialize (version + capabilities), list/call tools, list/read resources, list/get prompts, cancellation, error codes, pagination, progress. Security: host-enforced policies, tool approval, sandboxing, audit. Implementation guides (Python + TypeScript servers). 40+ reference servers. <strong>ACP</strong>: agent discovery (static, registry, P2P, DNS), capability description, communication patterns (request-response, delegation, pub-sub, negotiation). MCP vs ACP comparison. Protocol interoperability. Enterprise MCP (auth, RBAC, audit, multi-tenancy, deployment).</p></div>
+
+<div class="c"><h3>📍 05-Tool-Implementations.md <span class="ln">— 666 lines</span></h3><p><strong>Tool Comparison:</strong> <strong>OpenCode CLI / Crush</strong> — Go-based, MIT, multi-provider, terminal-native MCP, Bubble Tea TUI. Succeded by Crush (Charm ecosystem). <strong>Claude Code</strong> — Proprietary Anthropic, TypeScript/Node.js, deepest Claude integration, IDE support, DAP/SSP protocols, enterprise features. <strong>Hermes Agent</strong> — Python, MIT, Nous Research. Multi-platform (Telegram, Discord, Slack, WhatsApp, Signal, CLI). 20+ model providers. Persistent memory (MEMORY.md, FTS5, Honcho). Subagent delegation, cron scheduler, skills system, voice/vision, MCP, plugins. 13-dimension comparison table. Use-case decision matrix. Hermes vs Claude Code vs OpenCode feature comparison.</p></div>
+</div>
+
+<!-- ===================== RAG ===================== -->
+<div class="s" id="f4">
+<div class="sh"><div class="i s4">4</div><div class="t">04-RAG — 3 Documents</div><div class="tl">8,179 lines</div></div>
+
+<div class="c"><h3>📍 01-RAG-Architectures.md <span class="ln">— 829 lines</span></h3><p><strong>RAG:</strong> Definition and origin (Lewis et al., 2020). Why RAG (stale knowledge, hallucination, attribution, domain specificity, data freshness). Architecture: indexing pipeline (chunking, embedding, storing), retrieval stage (query encoding, similarity search, top-k), generation stage (context assembly, prompt construction, LLM generation). <strong>Implementation patterns:</strong> Naive RAG (index-retrieve-generate), Advanced RAG (pre-retrieval — query rewriting, HyDE; post-retrieval — re-ranking, filtering, compression), Modular RAG (routing, Self-RAG, Corrective RAG, Adaptive RAG, Graph RAG, Agentic RAG, multi-modal RAG). <strong>Chunking:</strong> fixed-size, semantic, recursive, agentic. <strong>Embedding models:</strong> text-embedding-ada-002, Sentence-Transformers, BGE, E5/E5-Mistral, MTEB leaderboard. <strong>Vector DBs:</strong> Pinecone, Weaviate, Qdrant, Milvus, Chroma comparison. <strong>RAG Evaluation:</strong> RAGAS (faithfulness, relevance, precision, recall), TruLens, ARES, RGB.</p></div>
+
+<div class="c"><h3>📍 02-Advanced-RAG.md <span class="ln">— 3,626 lines</span></h3><p><strong>Advanced RAG:</strong> Multi-modal RAG (text+image using CLIP/SigLIP, text+table, text+code, text+audio). <strong>Graph RAG</strong> — Microsoft's GraphRAG (entity extraction, community detection, summarization, global/local search). <strong>Advanced patterns:</strong> Self-RAG (reflection tokens, retrieval on demand), Corrective RAG (CRAG — retrieve → evaluate → web search fallback), Adaptive RAG (query classifier routes to no-retrieval/single/multi), SPEC5, REPLUG. <strong>Query understanding:</strong> classification, rewriting, decomposition, HyDE, step-back, routing (semantic routers). <strong>Re-ranking:</strong> cross-encoders vs bi-encoders, Cohere Rerank, BGE Reranker, monoT5, RankLLaMA/RankZephyr, ColBERT-v2, ColPali, FlashRank. <strong>Hybrid search:</strong> BM25 + embedding fusion, RRF, weighted RRF. <strong>Production RAG:</strong> caching (semantic cache, Redis), monitoring, A/B testing. <strong>Contextual retrieval</strong> (Anthropic). <strong>Agentic RAG:</strong> router agents, tool agents, multi-hop, iterative, FLARE, RAPTOR. <strong>RAG security</strong> (injection via retrieved docs, PII). Full code examples for each pattern.</p></div>
+
+<div class="c"><h3>📍 03-Vector-Databases.md <span class="ln">— 3,724 lines</span></h3><p><strong>Vector DBs:</strong> <strong>Indexing algorithms:</strong> IVF (inverted file, coarse quantizer, residual encoding), HNSW (hierarchical navigable small world, multi-layer graph, entry points), DiskANN (SSD-optimized, Vamana graph, compressed), Product Quantization (M-subspaces, codebooks, asymmetric distance computation), ScaNN (anisotropic quantization, Score-aware), LSH (random projections, hash tables). <strong>Distance metrics:</strong> cosine, L2 (Euclidean), inner product (dot), L1, Chebyshev, Hamming, Jaccard, and their mathematical derivations. <strong>Full platform deep dives:</strong> Faiss (Meta — IVF, HNSW, PQ, GPU), Chroma (developer-friendly, embedded, SQLite+Celery), Pinecone (managed, pod-based, serverless, storage-optimized), Qdrant (Rust, payload filtering, quantized, scroll API), Weaviate (GraphQL, multi-tenancy, hybrid search, modules), Milvus (cloud-native, GPU indexing, 4-tier architecture, distributed), pgvector (PostgreSQL extension, IVFFlat, HNSW, transactional guarantees), Elasticsearch (knn query, dense/sparse, ELSER, hybrid), Redis (RedisVL, vector similarity, caching + search). 20-dimension comparison across all platforms. Production deployment guide.</p></div>
+</div>
+
+<!-- ===================== ENTERPRISE ===================== -->
+<div class="s" id="f5">
+<div class="sh"><div class="i s5">5</div><div class="t">05-Enterprise — 3 Documents</div><div class="tl">4,490 lines</div></div>
+
+<div class="c"><h3>📍 01-Enterprise-AI-Deployment.md <span class="ln">— 1,011 lines</span></h3><p><strong>Enterprise Deployment:</strong> Deployment architectures (cloud, on-premises, edge, hybrid). Model serving frameworks: vLLM (PagedAttention, continuous batching, tensor parallelism, prefix caching), TGI (HuggingFace, quantization, streaming), Triton Inference Server (multi-framework, ensemble, concurrent execution), Ollama (simplified local), TensorRT-LLM (NVIDIA-optimized, FP8, inflight batching). Kubernetes (deployment, HPA, GPU node pools, affinity). Serverless (Modal, RunPod, Banana, Replicate). MLOps lifecycle (data→validation→features→training→registry→deployment→monitoring→feedback). Feature stores (Feast, Tecton). Model registry (MLflow). Pipeline orchestration (Kubeflow, Airflow). CI/CD for ML. Monitoring (infrastructure: Prometheus+Grafana; model: LangSmith, W&B Prompts, Arize, LangFuse; quality: latency, throughput, drift). A/B testing (shadow, canary, champion/challenger, interleaved). Cost optimization (prompt optimization, output length, model tiering, semantic cache, batching). Compliance (EU AI Act, US EOs, China regulations). Security (prompt injection, PII, guardrail layers). Model governance lifecycle. Disaster recovery (multi-region HA, backup). Enterprise platforms (Azure OpenAI, AWS Bedrock, GCP Vertex, Databricks). Case studies.</p></div>
+
+<div class="c"><h3>📍 02-Fine-Tuning-Enterprise.md <span class="ln">— 3,377 lines</span></h3><p><strong>Enterprise Fine-Tuning:</strong> PEFT family (LoRA: rank selection, alpha, target modules, merge; QLoRA: NF4 quantization, double quantization, paged optimizers; DoRA: weight decomposition; AdaLoRA: SVD-based budget allocation; LoRA-XS; PiSSA; (IA)³; prefix/prompt/p-tuning). Data pipeline for fine-tuning (collection, filtering, deduplication, formatting, packing — attention mask, loss mask). Synthetic data (Self-Instruct, Evol-Instruct, Data Dreaming, Magicoder OSS-Instruct). Annotation (platforms, QC, IAA, gold standards). Training infrastructure (Axolotl, Unsloth, TRL, HuggingFace, modal). Hyperparameter guide (LoRA rank, learning rate, batch size, epochs, warmup, cosine schedule). Evaluation before/after (benchmark contamination, human eval, LLM-as-judge). Deployment of fine-tuned models (vLLM adapter serving, LoRAX, merging, quantization). RLHF data pipeline (preference construction, reward model, PPO). Full code examples.</p></div>
+
+<div class="c"><h3>📍 03-AI-Infrastructure.md <span class="ln">— 102 lines</span></h3><p><strong>Infrastructure:</strong> GPU architecture (H100, H200, B200, MI300X, Gaudi 3 — memory, bandwidth, TFLOPs, interconnect, power). Training clusters (single to frontier scale). Parallelism strategies (data, tensor, pipeline, expert, sequence, FSDP). Inference hardware (A10G, L4, L40S, A100, H100, TPU v5p, Trainium2, Groq LPU, Cerebras). Storage tiers (NVMe, object, archive, ML cache). Networking (NVLink, InfiniBand, RoCE, Ethernet — speeds, latency, topologies).</p></div>
+</div>
+
+<!-- ===================== ADVANCED ===================== -->
+<div class="s" id="f6">
+<div class="sh"><div class="i s6">6</div><div class="t">06-Advanced — 10 Documents</div><div class="tl">10,153 lines</div></div>
+
+<div class="c"><h3>📍 01-Multimodal-AI.md <span class="ln">— 1,970 lines</span></h3><p><strong>Multimodal:</strong> Vision models: ViT (patch embedding, 16×16, CLS token, position embedding), YOLO series (1-10, anchor boxes, loss, architecture evolution), DETR (transformer detection, bipartite matching, Hungarian loss), SAM (promptable segmentation, SA-1B dataset, mask decoder). Image generation: Stable Diffusion (1→XL→3→3.5, VAE, UNet/MMDiT, CFG), Flux (12B, MMDiT, T5-XXL), DALL-E 2/3 (CLIP, prior, decoder, prompt improvement), Midjourney (versions 1-7, style tuning). Video: Sora (spacetime patches, DiT, 60s 1080p), Gen-3, Kling, CogVideoX. Audio: Whisper (multilingual ASR, architecture), MusicGen (EnCodec, transformer, text-to-music), AudioCraft (MusicGen, AudioGen, compression models). Multimodal LLMs: CLIP (contrastive, 400M pairs, zero-shot), LLaVA (ViT+projection+LLM, visual instruction tuning), Qwen-VL, GPT-4V/4o, Gemini (native multimodal, 1M tokens). 3D generation (Point-E, Shap-E, DreamFusion/SDS, Zero-1-to-3).</p></div>
+
+<div class="c"><h3>📍 02-Diffusion-Models.md <span class="ln">— 411 lines</span></h3><p><strong>Diffusion:</strong> Mathematical foundation (forward process: q(x_t|x_{t-1}) = N(√(1-β_t)x_{t-1}, β_tI), reverse process: p_θ(x_{t-1}|x_t), DDPM training objective: MSE on ε prediction). Noise schedules (linear, cosine, square-root, sigmoid, v-prediction). Sampling methods (DDPM 1000 steps, DDIM 10-100 steps, DPM-Solver, Consistency Models). Latent diffusion (VAE→latent space, 8× compression, SD architecture). Conditioning (cross-attention on text, CFG with guidance scale g=0-14, ControlNet for spatial conditioning — canny, depth, pose, segmentation). Score-based models (score matching, Score SDE, Probability Flow ODE). Architectures: U-Net (SD 1/2/XL), MMDiT (SD3, Flux, bidirectional text-image attention), DiT (pure transformer for diffusion). Applications: text-to-image, text-to-video (Sora), text-to-3D, audio generation.</p></div>
+
+<div class="c"><h3>📍 03-Evaluation-Benchmarks.md <span class="ln">— 3,414 lines</span></h3><p><strong>Evaluation:</strong> Knowledge benchmarks (MMLU/MMLU-Pro: 57 subjects, 14K-12K questions; ARC: science, easy/challenge; NQ, TriviaQA). Reasoning (GSM8K: grade-school math, chain-of-thought; MATH: competition, 5 difficulty levels; BBH: BIG-Bench, 23 tasks; GPQA: PhD-level science; SWE-bench: GitHub issues, 2,294 tasks). Coding (HumanEval: 164 Python problems, pass@k; MBPP: 974 problems; LiveCodeBench: fresh problems). Chat/Instruction (MT-Bench: 80 multi-turn, 1-10 LLM-as-judge; Chatbot Arena: ELO ratings, 100K+ human votes; AlpacaEval: 805 instructions, GPT-4 judge; LMSys leaderboard). Safety (TruthfulQA, RealToxicityPrompts, BOLD, BBQ, StereoSet, XSTest, SafetyBench). <strong>Evaluation methodology:</strong> LLM-as-judge (prompts, biases — position, verbosity, self-enhancement; calibration, multi-judge, rubrics), human evaluation (best practices, inter-annotator agreement, adjudication), contamination (n-gram, embedding-based, dynamic benchmarks), statistical significance (bootstrapping, confidence intervals, effect sizes). Full code examples for building eval pipelines. Leaderboard analysis and interpretation.</p></div>
+
+<div class="c"><h3>📍 04-Prompt-Engineering.md <span class="ln">— 3,027 lines</span></h3><p><strong>Prompt Engineering:</strong> Fundamentals (system/user/assistant roles, temperature, top_p, max_tokens, stop sequences, frequency/ presence penalty, JSON mode). <strong>20+ techniques with full examples:</strong> zero-shot, few-shot (static/dynamic selection), chain-of-thought (Wei et al. 2022), self-consistency (Wang et al. 2023), tree-of-thoughts (Yao et al. 2024, BFS/DFS), graph-of-thoughts (Besta et al. 2024), ReAct (Yao et al. 2023, Thought→Action→Observation), Reflexion (Shinn et al. 2023, self-reflection), skeleton-of-thought (Li et al. 2024), least-to-most (Zhou et al. 2023), emotional prompting (Li et al. 2023), generated knowledge (Liu et al. 2022), PAL (Gao et al. 2023, program-aided), scratchpad (Nye et al. 2022), contrastive (Chia et al. 2024), person prompting, chain-of-density (Adams et al. 2023), role prompting, meta prompting, system 2 attention (Weston & Sukhbaatar 2023). <strong>Automated prompting:</strong> APE (Zhou et al. 2023), DSPy (Khattab et al. 2024 — modules, teleprompters, optimizers). <strong>Prompt injection defense</strong> (delimiters, priority, canary tokens, input/output guardrails). <strong>Structured output</strong> (Outlines, lm-format-enforcer, JsonFormer, guidance, instructor, OpenAI structured outputs, constrained decoding with FSM/logit bias). <strong>Multimodal prompting</strong> (image, audio, video inputs with text).</p></div>
+
+<div class="c"><h3>📍 05-Interpretability.md <span class="ln">— 569 lines</span></h3><p><strong>Interpretability:</strong> Taxonomy (global vs local, intrinsic vs post-hoc). Feature-level: superposition hypothesis (Elhage et al. 2022), polysemanticity, monosemanticity. Circuit-level: IOI circuit (GPT-2 Small — 26 attention heads, duplicate token heads, s-inhibition, name mover), induction heads (in-context learning mechanism), circuit discovery methods (ACDC, AutoCircuit, Conjecture). Representation engineering (concept directions, activation steering, refusal removal, honesty steering). Probing (linear probes, representation probing, intervention probes). Logit lens / tuned lens (layer-by-layer prediction, early vs late decoding). Activation patching (clean/corrupted/patched runs, causal tracing, ROME, causal scrubbing). Sparse autoencoders (SAEs: architecture, gated SAEs, TopK SAEs, what they discover, limitations). Feature visualization (activation maximization, dataset examples). LLM explainability (attention ≠ explanation, integrated gradients, LRP, self-explanations). XAI for tabular/vision (SHAP, LIME, GradCAM). Industrial applications (FDA, GDPR, EU AI Act, debugging spurious correlations, bias detection, safety monitoring).</p></div>
+
+<div class="c"><h3>📍 06-Recommendation-Systems.md <span class="ln">— 215 lines</span></h3><p><strong>RecSys:</strong> Collaborative filtering (user-user, item-item, matrix factorization, Funk SVD). Content-based (item features, user profiles). Hybrid methods (weighted, cascade, switch, meta-level). Deep learning (NCF, two-tower, DCN, Wide&Deep, DIN, LLM-based). Feature engineering (sparse/dense/text/image/sequence/context features, crosses, feature stores). Candidate generation (LSH, HNSW, SCaNN, IVF). Ranking (pointwise, pairwise BPR, listwise LambdaRank NDCG). Evaluation (offline: RMSE, precision/recall/k, NDCG, hit rate, coverage, diversity, novelty; online: CTR, conversion, engagement, retention, A/B testing, interleaved experiments).</p></div>
+
+<div class="c"><h3>📍 07-Time-Series-Forecasting.md <span class="ln">— 139 lines</span></h3><p><strong>Time-Series:</strong> Classical (ARIMA, exponential smoothing — SES/Holt/Holt-Winters, Prophet). ML for TS (feature engineering — lags, rolling stats, calendar, Fourier features, XGBoost/LightGBM, Random Forest). Deep learning (LSTM, GRU, TCN, Transformer — Informer, PatchTST, TimesNet; N-BEATS, TFT, DeepAR). Probabilistic forecasting (quantile regression, conformal prediction, Bayesian, diffusion TTA). Multi-horizon (direct, recursive, seq2seq). Anomaly detection (point, contextual, collective; IQR, isolation forest, autoencoder, LSTM-autoencoder, SPOT/EVT, SR-CNN).</p></div>
+
+<div class="c"><h3>📍 08-Adversarial-ML.md <span class="ln">— 174 lines</span></h3><p><strong>Adversarial ML:</strong> Threat model (white/black/gray box, targeted/untargeted, availability/integrity). Evasion attacks (FGSM, PGD, CW, adversarial patch). Poisoning (data poisoning, backdoor, clean-label, model poisoning in FL). Model extraction (substitute model training, defenses: rate limiting, watermarking, DP). Inference attacks (membership inference, model inversion). LLM-specific (prompt injection: direct/indirect/multi-turn/context overflow; jailbreaking: roleplay, hypothetical, coding, encoding/translation, adversarial suffix; data extraction: training data, system prompt, API keys). Defenses (adversarial training, TRADES, AWP; certified defenses: randomized smoothing; input transformation; detection; LLM defenses: system prompt hardening, input/output guardrails, PPL filtering, LLM-as-judge).</p></div>
+
+<div class="c"><h3>📍 09-AI-UX-and-Interaction.md <span class="ln">— 155 lines</span></h3><p><strong>AI UX:</strong> Interaction patterns (command vs conversation, proactive vs reactive, multimodal). Conversation design (expectations, uncertainty, progress, feedback, correction, context). AI-assisted workflows (copilot, agent, review, assistant, augment, tutor). Trust & transparency (competence, reliability, honesty, controllability, privacy; transparency requirements — model identity, AI-gen label, data use, explanation). Error handling (hallucination, misunderstanding, refusal, incomplete, off-target; recovery: clarify, correct, escalate, fallback, teach). Feedback collection (implicit, explicit, comparative). Evaluation metrics (task success, time on task, error rate, satisfaction CSAT/NPS, conversation length, trust, learning curve).</p></div>
+
+<div class="c"><h3>📍 10-AutoML-NAS.md <span class="ln">— 79 lines</span></h3><p><strong>AutoML:</strong> HPO methods (grid, random, Bayesian optimization, TPE, CMA-ES, Hyperband, BOHB). NAS (search spaces: macro/micro/hybrid; search strategies: random, evolutionary, RL, gradient-based DARTS, one-shot ENAS, zero-shot). Auto data prep (feature engineering, selection, augmentation, auto-encoding). Frameworks (AutoGluon, AutoKeras, H2O, FLAML, Optuna, Ray Tune, Google Vertex AI).</p></div>
+</div>
+
+<!-- ===================== EMERGING ===================== -->
+<div class="s" id="f7">
+<div class="sh"><div class="i s7">7</div><div class="t">07-Emerging — 3 Documents</div><div class="tl">1,329 lines</div></div>
+
+<div class="c"><h3>📍 01-Emerging-AI-Research.md <span class="ln">— 614 lines</span></h3><p><strong>Research Frontiers:</strong> Test-time compute scaling (PRMs, MCTS for LLMs, self-play RL at inference, BoN sampling, compute-performance Pareto frontiers). Watermarking (statistical watermarking, SynthID-Text, image/audio/video watermarking, C2PA standards, detection vs watermarking). Advanced reasoning (deductive, inductive, abductive, analogical, causal, counterfactual, spatial, temporal; CoT, self-consistency, ToT, GoT, skeleton-of-thought, CoD, cumulative reasoning, contrastive CoT). Architecture innovations (SSMs: Mamba 1/2, Jamba; linear attention; MoE advances: DeepSeek-V3 architecture, MLA, fine-grained experts, load balancing). Frontier model landscape (GPT-4o/4.1, o3, Claude 4, Gemini 2.5 Pro, DeepSeek-V3/R1, Qwen3, LLaMA 4, Mistral Large 3 with detailed specs). Agentic capabilities. Multimodal frontier (realtime video, speech-to-speech, screen understanding). AI4Science (AlphaFold 3, ESM3, RoseTTAFold, Evo, HyenaDNA, GNoME, MatterGen, GraphCast, GenCast, AlphaProof, AlphaGeometry). Multi-agent systems (MoA, agent debate, hierarchical teams). AI safety (alignment faking, specification gaming, sandbagging). Hardware (H100/B200, next-gen: optical, neuromorphic, in-memory computing; 100K+ GPU clusters). Governance (EU AI Act, US policy, China regulation, Bletchley Declaration, RSPs, ASL levels, compute governance).</p></div>
+
+<div class="c"><h3>📍 02-AI-Safety.md <span class="ln">— 585 lines</span></h3><p><strong>Safety:</strong> Alignment problem (outer: King Midas problem, reward misspecification; YouTube/social media/content moderation examples; inner: mesa-optimization, deceptive alignment, demonstrated by Anthropic 2024). RLHF (SFT→RM→PPO, limitations: crowdworker bias, reward hacking, mode collapse, Goodhart's law). DPO variants (KTO, IPO, ORPO, SimPO, CPO, GRPO). Constitutional AI (self-critique, revision, RLAIF, Claude constitution). Red teaming (manual, automated, gradient-based, LLM-based). Inference-time safety (input guardrails — prompt injection detection; output guardrails — content moderation, PII, factual consistency; defense in depth; system prompt hardening; structured output enforcement). Catastrophic risks (x-risks: misalignment, AI arms race, power concentration, information ecology collapse; takeoff scenarios: soft/fast; alignment faking demonstration). Governance (EU AI Act, US EO 14110, UK AI Safety Summit, China regulation, RSPs — ASL-1 to ASL-4, trigger capabilities, compute governance). Safety benchmarks (TruthfulQA, RealToxicityPrompts, BOLD, BBQ, StereoSet, CrowS-Pairs, HONEST, XSTest, SafetyBench, AdvBench, StrongREJECT). Frameworks (Nemo Guardrails, Guardrails AI, Llama Guard, Azure AI Content Safety, OpenAI Moderation, Rebuff). Incident response plan (detect→triage→contain→analyze→mitigate→verify→document→review). Agent safety, multi-agent safety.</p></div>
+
+<div class="c"><h3>📍 03-AI-Governance.md <span class="ln">— 130 lines</span></h3><p><strong>Governance:</strong> EU AI Act (unacceptable/high/limited/minimal risk categories, GPAI requirements, systemic risk for >10²⁵ FLOPs, fines up to 7%). US AI policy (Executive Order 14110, NIST AI RMF, state-level: Colorado, California, New York). China regulation (Deep Synthesis, Algorithmic Recommendation, Generative AI Measures). International (Bletchley Declaration, Hiroshima AI Process, OECD, UNESCO, Council of Europe AI Treaty). Industry self-regulation (OpenAI Preparedness Framework, Anthropic RSP, Google DeepMind Frontier Safety Framework, Meta Responsible AI). Corporate governance (board, ethics committee, chief ethics officer, ML guild, audit function. NIST AI RMF: GOVERN→MAP→MEASURE→MANAGE). Emerging issues (open-weight models, compute governance, AI election content, whistleblowing, compute allocation equity).</p></div>
+</div>
+
+<!-- ===================== REFERENCE ===================== -->
+<div class="s" id="f8">
+<div class="sh"><div class="i s8">8</div><div class="t">08-Reference — 3 Documents</div><div class="tl">1,614 lines</div></div>
+
+<div class="c"><h3>📍 01-Glossary.md <span class="ln">— 358 lines</span></h3><p><strong>Glossary:</strong> 65+ unified terms with definitions and cross-references to specific documents and sections. Covers: LLM, Foundation Model, Base/Instruct Model, Transformer, Attention, Token, Embedding, Quantization (GGUF, GPTQ, AWQ), Fine-tuning (SFT, RLHF, DPO), RAG, Chunking, Embedding Model, Vector Database, Semantic Search, MCP, ACP (Host/Client/Server, Tool, Resource, Prompt), AI Agent, Orchestrator, Agent Loop, ReAct, CoT, Task Decomposition, Subagent, Tool-use, Function Calling, Autonomous Agent, Orchestration Patterns, SOUL.md, SKILL.md, AGENTS.md, CLAUDE.md, .cursorrules, Agent Identity, Procedural Memory, OpenCode, Crush, Claude Code, Hermes Agent, Context Window, KV Cache, MoE, Speculative Decoding, Distillation, Hallucination, Prompt Engineering, System Prompt, Agent Frameworks, Multi-Agent System, Human-in-the-Loop.</p></div>
+
+<div class="c"><h3>📍 02-AI-Roadmap.md <span class="ln">— 486 lines</span></h3><p><strong>Roadmap:</strong> Current state 2026 (multi-agent mainstream, MCP/ACP adoption, model commoditization, orchestrator emergence). Near-term 2026-27 (agent-to-agent communication standard, MCP as universal tool layer, orchestrators as primary interface, specialized agents, persistent memory/self-improvement, SLMs vs frontier models). Mid-term 2027-28 (autonomous AI dev teams, enterprise governance, on-device agentic AI, protocol convergence MCP+ACP). Long-term 2028+ (multi-agent emergent intelligence toward AGI, AI-native OS, natural language as compile target). Impact on developers (SDLC transformation, new skills, orchestrator in dev lifecycle). Recommendations (what to learn: immediate — MCP, agent frameworks, prompt engineering, eval; short-term — advanced RAG, interpretability, safety; medium-term — multi-agent, formal verification, AI governance; tools: Hermes Agent, MCP ecosystem, LangChain/LangGraph, DSPy; design for interoperability: protocol-first, tool modularity, separation of identity from procedure).</p></div>
+
+<div class="c"><h3>📍 03-Agent-Configs-SOUL-SKILL.md <span class="ln">— 770 lines</span></h3><p><strong>Agent Configs:</strong> <strong>SOUL.md</strong> — identity file. Purpose (agent constitution, cross-session persistence). Origin (Hermes Agent, OpenCode ecosystem). Philosophy (identity precedes action, values drive behavior, persistence of character). Structure (identity, core values, behavior rules, communication style, domain knowledge, constraints). Examples (development agent, personal assistant, open-source project). How agents use it (context injection, session loading, value-driven reasoning). <strong>SKILL.md</strong> — procedural memory. Purpose (repeatable workflows, differs from docs — triggered, structured, verified). Structure (YAML frontmatter — name, description, trigger; numbered steps; pitfalls; verification). Examples (git workflow, code review). How agents use (discovery → indexing → trigger matching → execution → verification → refinement). SOUL vs SKILL (identity vs procedure, complementary pair). <strong>Related:</strong> AGENTS.md (project instructions), CLAUDE.md (Claude Code specific), .cursorrules (Cursor IDE rules). Full comparison across all 5 file types. Creation guides for SOUL.md and SKILL.md.</p></div>
+</div>
+
+<!-- ===================== PAPERS ===================== -->
+<div class="s" id="f9">
+<div class="sh"><div class="i s9">9</div><div class="t">09-Papers — 1 Document</div><div class="tl">515 lines</div></div>
+
+<div class="c"><h3>📍 01-Foundational-Papers.md <span class="ln">— 515 lines</span></h3><p><strong>50+ Landmark Papers</strong> organized by area, each with summary, key contribution, impact, citations, and key quote:</p>
+<div class="g2">
+<div class="gc"><div class="icn">📄</div><h4>Transformer & Attention</h4><p>Attention Is All You Need (140K+ cites), BERT (120K+), GPT-2, GPT-3 (50K+)</p></div>
+<div class="gc"><div class="icn">📈</div><h4>Scaling Laws</h4><p>Scaling Laws for Neural Language Models (12K+), Chinchilla (8K+)</p></div>
+<div class="gc"><div class="icn">🎯</div><h4>Training & Alignment</h4><p>InstructGPT/RLHF (10K+), DPO (3.5K+), Constitutional AI (3K+)</p></div>
+<div class="gc"><div class="icn">💡</div><h4>Prompting & Reasoning</h4><p>Chain-of-Thought (12K+), Tree of Thoughts (3K+), ReAct (3.5K+)</p></div>
+<div class="gc"><div class="icn">🔍</div><h4>RAG</h4><p>Retrieval-Augmented Generation (8K+) — Lewis et al. 2020</p></div>
+<div class="gc"><div class="icn">🔧</div><h4>Fine-Tuning</h4><p>LoRA (10K+), QLoRA (4K+)</p></div>
+<div class="gc"><div class="icn">⚡</div><h4>Inference</h4><p>FlashAttention (4K+), PagedAttention (2K+)</p></div>
+<div class="gc"><div class="icn">👁️</div><h4>Vision</h4><p>ResNet (200K+), Inception (55K+), GANs (120K+), DDPM (20K+), Stable Diffusion (15K+), CLIP (20K+), ViT (30K+), SAM (8K+)</p></div>
+<div class="gc"><div class="icn">🤖</div><h4>Reinforcement Learning</h4><p>DQN (35K+), AlphaGo (30K+). Influenced DeepSeek-R1's RL methodology</p></div>
+<div class="gc"><div class="icn">🛡️</div><h4>Safety</h4><p>Concrete Problems in AI Safety (3K+), The Alignment Problem (book)</p></div>
+</div>
+</div>
+</div>
+
+<!-- ===================== INDUSTRY ===================== -->
+<div class="s" id="f10">
+<div class="sh"><div class="i s10">10</div><div class="t">10-Industry — 3 Documents</div><div class="tl">823 lines</div></div>
+
+<div class="c"><h3>📍 01-AI-Industry-Applications.md <span class="ln">— 609 lines</span></h3><p><strong>Industry AI:</strong> Real-world applications across 13 industries with specific companies, architectures, technologies, and outcomes.</p>
+<div class="g3">
+<div class="gc"><div class="icn">🏥</div><h4>Healthcare</h4><p>Paige.ai, PathAI, Aidoc — diagnostic AI. Insilico, Recursion — drug discovery. Abridge, Nuance — clinical notes</p></div>
+<div class="gc"><div class="icn">💰</div><h4>Finance</h4><p>Stripe Radar (real-time, 1000+ signals), PayPal ($1B+/yr saved), Renaissance Technologies (66% avg returns)</p></div>
+<div class="gc"><div class="icn">⚖️</div><h4>Legal</h4><p>Ironclad, Evisort — contract analysis. Everlaw, Relativity — e-discovery. 60-80% time reduction</p></div>
+<div class="gc"><div class="icn">🎓</div><h4>Education</h4><p>Khanmigo (50K+ classrooms), Duolingo Max (25% improvement), Carnegie Learning MATHia (2× growth)</p></div>
+<div class="gc"><div class="icn">💻</div><h4>Dev Tools</h4><p>GitHub Copilot (1.8M+ paid), Cursor (AI-native IDE), Devin (autonomous engineer), CodeRabbit</p></div>
+<div class="gc"><div class="icn">🎬</div><h4>Media</h4><p>Sora (60s 1080p), Runway Gen-3, Pika, Suno, Udio, ElevenLabs. AI video/music generation at scale</p></div>
+<div class="gc"><div class="icn">🛒</div><h4>Retail</h4><p>Amazon (35% revenue from recs), Netflix (80% watch time), Spotify Discover Weekly (40M users), TikTok</p></div>
+<div class="gc"><div class="icn">🏭</div><h4>Manufacturing</h4><p>Cognex, Landing AI — visual inspection. Augury — predictive maintenance. UPS ORION — route optimization</p></div>
+<div class="gc"><div class="icn">🤝</div><h4>Customer Service</h4><p>Intercom Fin (50% auto-resolve), Zendesk AI, Observe AI, Cresta. 70-80% reduction in manual QA</p></div>
+<div class="gc"><div class="icn">🚗</div><h4>Transportation</h4><p>Waymo (4 cities, L4), Tesla FSD (400K+ beta), UPS ORION (100M miles/yr saved, $300-400M/yr)</p></div>
+<div class="gc"><div class="icn">⚡</div><h4>Energy</h4><p>DeepMind + Google Data Centers (40% cooling reduction, $100M+ saved). AutoGrid (2GW+ managed)</p></div>
+<div class="gc"><div class="icn">🌾</div><h4>Agriculture</h4><p>John Deere See & Spray (77% herbicide reduction), Corteva Granular, Blue River Technology</p></div>
+<div class="gc"><div class="icn">🏛️</div><h4>Government</h4><p>Project Maven (drone video analysis), DARPA AI Next ($2B), JADC2 battlefield management</p></div>
+</div>
+</div>
+
+<div class="c"><h3>📍 02-AI-Economics.md <span class="ln">— 119 lines</span></h3><p><strong>AI Economics:</strong> Market size ($200B in 2024, $396B in 2026, $1.1T+ projected 2030 at 37% CAGR). Compute costs (GPT-4: $100-150M, GPT-5: $500M-1B, LLaMA 3 405B: $100-200M, DeepSeek-V3: $5-10M). Inference costs falling 80% YoY (quantization, specialized hardware, distillation). Break-even self-hosted vs API (~1M queries/month). Labor impact (translators high substitution, developers high augmentation, doctors moderate). New job categories (prompt engineer, alignment researcher, LLMOps engineer, agent designer). Productivity gains (GitHub Copilot 55% faster, BCG 40% higher quality, McKinsey 30-60% customer service). Market concentration risks (NVIDIA >85% GPU, AWS+Azure+GCP 66% cloud, 3-5 frontier model companies).</p></div>
+
+<div class="c"><h3>📍 03-AI-for-Robotics.md <span class="ln">— 95 lines</span></h3><p><strong>Robotics:</strong> Perception (YOLO, DETR, SAM, Depth Anything, tactile sensing, force control). Motion planning (RRT, A*, CHOMP, STOMP, learning-based). Control (PID, MPC, LQR, impedance, learned). Robot learning (behavioral cloning, RL, sim-to-real, offline RL, VLA models — RT-2, Octo, π0, DROID). Simulation (MuJoCo, Isaac Sim, SAPIEN, PyBullet, Habitat, Drake). Hardware platforms (Boston Dynamics Spot $75K, UR5e $35K, Franka Panda $12K, Jetson $2K, Hello Robot Stretch $20K). Key systems (RT-2, Octo, π0, DROID). Training in sim → deploy on real (domain randomization, system identification).</p></div>
+</div>
+
+<!-- ===================== STUDY PATHWAYS ===================== -->
+<div class="s">
+<div class="sh"><div class="i s2" style="background:var(--pub);color:var(--pu);">★</div><div class="t">Study Pathways</div></div>
+
+<div class="c">
+<h3>🧠 Path 1: Machine Learning Engineer</h3>
+<div class="tb">
+<table>
+<thead><tr><th>Step</th><th>Read</th><th>Key Topics</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>01-Foundations/08-Mathematics-for-ML.md</td><td>Linear algebra, probability, calculus, statistics, information theory</td></tr>
+<tr><td>2</td><td>01-Foundations/02-Machine-Learning.md</td><td>All ML paradigms, loss functions, optimization, regularization, ensembles</td></tr>
+<tr><td>3</td><td>01-Foundations/03-Deep-Learning.md</td><td>Backpropagation, CNNs, RNNs, normalization, attention mechanisms</td></tr>
+<tr><td>4</td><td>01-Foundations/05-Training-Methodologies.md</td><td>Training pipelines, scaling laws, fine-tuning, alignment methods</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="c">
+<h3>🔧 Path 2: LLM Engineer</h3>
+<div class="tb">
+<table>
+<thead><tr><th>Step</th><th>Read</th><th>Key Topics</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>02-LLMs/01-Transformer-Architecture.md</td><td>Full transformer: attention, positional encoding, encoder/decoder architectures</td></tr>
+<tr><td>2</td><td>02-LLMs/02-Model-Families.md</td><td>All model families compared: specs, benchmarks, use cases</td></tr>
+<tr><td>3</td><td>02-LLMs/03-Tokenization.md</td><td>BPE, WordPiece, SentencePiece, tiktoken, vocab sizes, multilingual</td></tr>
+<tr><td>4</td><td>02-LLMs/04-Quantization.md</td><td>GGUF, GPTQ, AWQ, bitsandbytes, AQLM, mixed precision, hardware support</td></tr>
+<tr><td>5</td><td>06-Advanced/04-Prompt-Engineering.md</td><td>20+ techniques, DSPy, structured output, injection defense</td></tr>
+<tr><td>6</td><td>06-Advanced/03-Evaluation-Benchmarks.md</td><td>All benchmarks, LLM-as-judge methodology, contamination, statistical significance</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="c">
+<h3>🤖 Path 3: Agent Developer</h3>
+<div class="tb">
+<table>
+<thead><tr><th>Step</th><th>Read</th><th>Key Topics</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>03-Agents/01-Agent-Architectures.md</td><td>Agent types, ReAct, orchestrator workflow, 5 orchestration patterns</td></tr>
+<tr><td>2</td><td>03-Agents/04-Protocols-MCP-ACP.md</td><td>MCP lifecycle, transports, security, implementation; ACP agent discovery</td></tr>
+<tr><td>3</td><td>03-Agents/02-Multi-Agent-Systems.md</td><td>Multi-agent architectures, communication, coordination, consensus, topologies</td></tr>
+<tr><td>4</td><td>03-Agents/03-Agentic-Frameworks.md</td><td>LangGraph, CrewAI, AutoGen, Semantic Kernel, DSPy — 20-dimension comparison</td></tr>
+<tr><td>5</td><td>03-Agents/05-Tool-Implementations.md</td><td>Hermes Agent vs Claude Code vs OpenCode — feature comparison, use-case matrix</td></tr>
+<tr><td>6</td><td>08-Reference/03-Agent-Configs-SOUL-SKILL.md</td><td>SOUL.md identity files, SKILL.md procedural memory, AGENTS.md, CLAUDE.md</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="c">
+<h3>📚 Path 4: RAG Specialist</h3>
+<div class="tb">
+<table>
+<thead><tr><th>Step</th><th>Read</th><th>Key Topics</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>04-RAG/01-RAG-Architectures.md</td><td>Indexing, retrieval, generation pipeline; chunking; embedding models; evaluation</td></tr>
+<tr><td>2</td><td>04-RAG/02-Advanced-RAG.md</td><td>GraphRAG, Self-RAG, CRAG, agentic RAG, hybrid search, re-ranking, caching, security</td></tr>
+<tr><td>3</td><td>04-RAG/03-Vector-Databases.md</td><td>Faiss, Chroma, Pinecone, Qdrant, Weaviate, Milvus, pgvector, Elasticsearch, Redis</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="c">
+<h3>🏭 Path 5: Enterprise Architect</h3>
+<div class="tb">
+<table>
+<thead><tr><th>Step</th><th>Read</th><th>Key Topics</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>05-Enterprise/01-Enterprise-AI-Deployment.md</td><td>Deployment architectures, serving (vLLM, TGI, Triton, Ollama), Kubernetes, monitoring, cost optimization, compliance, security, disaster recovery</td></tr>
+<tr><td>2</td><td>05-Enterprise/02-Fine-Tuning-Enterprise.md</td><td>PEFT methods (LoRA/QLoRA/DoRA), data pipeline, synthetic data, training infra (Axolotl, Unsloth, TRL), deployment</td></tr>
+<tr><td>3</td><td>05-Enterprise/03-AI-Infrastructure.md</td><td>GPU architecture, cluster design, parallelism strategies, networking, storage</td></tr>
+<tr><td>4</td><td>06-Advanced/03-Evaluation-Benchmarks.md</td><td>Enterprise evaluation methodology, LLM-as-judge, A/B testing, monitoring</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="c">
+<h3>🚀 Path 6: AI Researcher</h3>
+<div class="tb">
+<table>
+<thead><tr><th>Step</th><th>Read</th><th>Key Topics</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>02-LLMs/02-Diffusion-Models.md</td><td>DDPM, DDIM, latent diffusion, CFG, score-based models, flow matching</td></tr>
+<tr><td>2</td><td>06-Advanced/01-Multimodal-AI.md</td><td>ViT, YOLO, SAM, Stable Diffusion, Sora, Whisper, CLIP, LLaVA, multimodal LLMs</td></tr>
+<tr><td>3</td><td>06-Advanced/05-Interpretability.md</td><td>SAEs, circuits, activation patching, probing, logit lens, representation engineering</td></tr>
+<tr><td>4</td><td>07-Emerging/02-AI-Safety.md</td><td>Alignment, RLHF limitations, constitutional AI, catastrophic risks, red teaming, safety benchmarks</td></tr>
+<tr><td>5</td><td>07-Emerging/01-Emerging-AI-Research.md</td><td>Test-time compute, watermarking, AI4Science, frontier architectures, multi-agent systems</td></tr>
+<tr><td>6</td><td>09-Papers/01-Foundational-Papers.md</td><td>50+ landmark papers with summaries, contributions, impact analysis</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="c">
+<h3>🎯 Path 7: AI Product Builder</h3>
+<div class="tb">
+<table>
+<thead><tr><th>Step</th><th>Read</th><th>Key Topics</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>06-Advanced/09-AI-UX-and-Interaction.md</td><td>Conversation design, interaction patterns, trust, error handling, evaluation</td></tr>
+<tr><td>2</td><td>01-Foundations/04-Data-Engineering.md</td><td>Data collection, quality, deduplication, decontamination, synthetic data, annotation</td></tr>
+<tr><td>3</td><td>06-Advanced/06-Recommendation-Systems.md</td><td>CF, content-based, hybrid, two-tower, ranking, candidate generation, A/B testing</td></tr>
+<tr><td>4</td><td>10-Industry/01-AI-Industry-Applications.md</td><td>13 industries: healthcare, finance, legal, education, dev tools, media, retail, etc.</td></tr>
+<tr><td>5</td><td>10-Industry/02-AI-Economics.md</td><td>Market size, cost structures, labor impact, productivity gains, market concentration</td></tr>
+<tr><td>6</td><td>08-Reference/02-AI-Roadmap.md</td><td>Current state, near/mid/long-term trends, recommendations for practitioners</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="c">
+<h3>🛡️ Path 8: AI Safety & Governance Practitioner</h3>
+<div class="tb">
+<table>
+<thead><tr><th>Step</th><th>Read</th><th>Key Topics</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>07-Emerging/02-AI-Safety.md</td><td>Alignment problem, RLHF/DPO/CAI, red teaming, catastrophic risks, incident response, frameworks</td></tr>
+<tr><td>2</td><td>06-Advanced/05-Interpretability.md</td><td>SAEs, circuits, activation patching, probing, safety monitoring via interpretability</td></tr>
+<tr><td>3</td><td>07-Emerging/03-AI-Governance.md</td><td>EU AI Act, US/China regulation, international frameworks, corporate governance, NIST AI RMF</td></tr>
+<tr><td>4</td><td>06-Advanced/08-Adversarial-ML.md</td><td>Evasion, poisoning, extraction, inference attacks; LLM-specific jailbreaking and defenses</td></tr>
+<tr><td>5</td><td>01-Foundations/09-Federated-Learning-Privacy.md</td><td>FL, DP, SMPC, HE, privacy in LLMs, membership inference, defenses</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!-- ===================== STATISTICS ===================== -->
+<div class="s">
+<div class="sh"><div class="i s5" style="background:var(--rdb);color:var(--rd);">∑</div><div class="t">Library Statistics</div></div>
+
+<div class="g2">
+<div class="gc"><div class="icn">📁</div><h4>Directories</h4><p>01-Foundations (10,324 lines)<br>02-LLMs (7,892 lines)<br>03-Agents (8,085 lines)<br>04-RAG (8,179 lines)<br>05-Enterprise (4,490 lines)<br>06-Advanced (10,153 lines)<br>07-Emerging (1,329 lines)<br>08-Reference (1,614 lines)<br>09-Papers (515 lines)<br>10-Industry (823 lines)</p></div>
+<div class="gc"><div class="icn">📊</div><h4>Key Metrics</h4><p>46 documents<br>53,404 total lines<br>2.1 MB total size<br>Documents >3,000 lines: 7<br>Documents >2,000 lines: 12<br>Average document: ~1,161 lines<br>Largest doc: Vector-Databases (3,724 lines)<br>Auto-enrichment: Every 12 hours</p></div>
+</div>
+</div>
+
+<div class="ft">
+  <p><strong>AI Library of Alexandria</strong> — Complete Study Reference</p>
+  <p>C:\Workspace\AiBaseKnowledge\ · 46 Documents · 53,404 Lines · 2.1 MB</p>
+  <p style="margin-top:4px;">June 2026 · Auto-enriching every 12 hours · "Never Stop Gathering All Knowledge"</p>
+</div>
+
+</div>
+</body>
+</html>
