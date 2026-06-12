@@ -2,7 +2,7 @@
 
 The most comprehensive AI knowledge base — markdown documents covering the entire modern AI landscape.
 
-> **50 documents | 15 topic directories | Self-contained | Public**
+> **79 documents | 15 topic directories | 29K+ new lines added | Self-contained | Public**
 
 ## Repository Structure
 
