@@ -96,10 +96,28 @@ Agentic git makes three things worse that were already bad with humans:
 
 ## 7. How to read this category
 
-- **02-Core-Topics** drills into the seven technical primitives: identity, signing, worktrees, PR review, bounties, replication, policy.
-- **03-Technical-Deep-Dive** has full working code: a from-scratch agent identity CLI, an Ed25519-signed commit wrapper, a `git push`-style worktree fork for parallel agents, and an MCP server exposing Gitlawb to Claude Code.
-- **04-Tools-and-Frameworks** is the 2026 inventory (47 projects, sorted by use case) plus a 30-day adoption plan.
-- **05-Future-Outlook** covers the 2026-2030 trajectory: the death of the GitHub-star economy, the rise of agent-native code markets, regulation, and three possible ends-state scenarios.
+The category has twelve chapters organized in three arcs.
+
+**The foundational arc (01-05):**
+
+- **01-Overview** (this file) — the definition, the actor map, and the 2026 inflection.
+- **02-Core-Topics** — the seven technical primitives: identity, signing, worktrees, PR review, bounties, replication, policy.
+- **03-Technical-Deep-Dive** — four from-scratch implementations: identity CLI, Ed25519-signed commit wrapper, worktree fan-out, MCP server.
+- **04-Tools-and-Frameworks** — the 2026 inventory (47 projects, sorted by use case) plus a 30-day adoption plan.
+- **05-Future-Outlook** — 2026-2030 trajectory, three plausible scenarios, regulatory forecast.
+
+**The practice arc (06-10):**
+
+- **06-Security-and-Supply-Chain** — threat model, defensive stack, real incidents, supply-chain primitives.
+- **07-Prompt-and-Commit-Patterns** — conventional commits, structured trailers, the Lore Protocol, h5i Agent Radio.
+- **08-Agent-Memory-and-Long-Running-Workflows** — four memory layers, session logs, AGENTS.md, Git-as-message-queue.
+- **09-Replay-Debug-and-Observability** — replayable session schema, postmortem format, observability stack.
+- **10-Multi-Agent-Conflict-Resolution** — worktrees, clash, role-based locks, semantic conflicts, merge-preview builds.
+
+**The frontier arc (11-12):**
+
+- **11-Evaluation-and-Benchmarking** — SWE-bench, custom repo evals, pass@k, cost-to-resolve, evaluation-as-CI.
+- **12-Legal-Precedent-and-IP** — authorship, Co-authored-by, license contamination, AI Act Article 14, operator liability.
 
 ## 8. See also
 
