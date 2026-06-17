@@ -2,7 +2,7 @@
 
 The most comprehensive AI knowledge base — markdown documents covering the entire modern AI landscape.
 
-> **177 documents | 23 topic directories | Self-contained | Public**
+> **217 documents | 27 topic directories | Self-contained | Public**
 
 ## Repository Structure
 
@@ -30,6 +30,10 @@ The most comprehensive AI knowledge base — markdown documents covering the ent
 ├── 21-AI-Regulation-Antitrust/                 # EU AI Act, US regulation, antitrust, export controls
 ├── 22-AI-Cybersecurity-Mythos/                 # Mythos model, AI-powered attacks, adversarial ML, SOC AI
 ├── 23-Local-AI-Inference-Self-Hosting/         # Odysseus, Ollama, GGUF, hardware, privacy/sovereignty
+├── 24-AI-Sales-and-Marketing/                   # AI SDRs, lead scoring, content, personalization, advertising, analytics
+├── 25-Multi-Cloud-AI-Strategy/                  # AWS/Azure/GCP AI, orchestration, data sovereignty, cost governance
+├── 26-Browser-Based-AI/                         # WebGPU, WebNN, WASM, Pyodide, Transformers.js, browser inference
+├── 27-AI-in-HR-and-Recruiting/                  # Resume screening, sourcing, interviewing, performance, retention, compensation, ethics
 ├── 09-Evolution-of-AI-Adoption.md  # History & evolution of AI adoption
 ├── Complete-Study-Reference.html    # Single-page study reference
 └── ai-library/            # Static web portal generator
@@ -65,6 +69,10 @@ The most comprehensive AI knowledge base — markdown documents covering the ent
 | 21-AI-Regulation-Antitrust | EU AI Act, US regulation, China governance, antitrust (Anthropic S-1, Amazon crackdown), export controls |
 | 22-AI-Cybersecurity-Mythos | Mythos model impact, AI-powered cyberattacks/defense, adversarial ML, SOC AI operations |
 | 23-Local-AI-Inference-Self-Hosting | Odysseus AI workspace, Ollama, GGUF quantization, hardware guide, local indexing, privacy |
+| 24-AI-Sales-and-Marketing | AI SDRs, predictive lead scoring, content marketing, personalization/CDP, CRM AI, programmatic advertising, marketing analytics |
+| 25-Multi-Cloud-AI-Strategy | AWS Bedrock/SageMaker, Azure OpenAI, GCP Vertex AI, multi-cloud orchestration, model procurement, data sovereignty, cost governance |
+| 26-Browser-Based-AI | WebGPU compute shaders, WebNN, WASM/llama.cpp, TensorFlow.js, Transformers.js, browser AI applications, privacy |
+| 27-AI-in-HR-and-Recruiting | Resume screening, candidate sourcing, AI interviewing, performance management, retention/attrition, compensation analytics, ethics/regulation |
 
 ## Browse the Library
 
