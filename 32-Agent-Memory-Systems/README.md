@@ -19,6 +19,7 @@ This category covers the memory layer end-to-end:
 - **The LOCOMO benchmark** — how to evaluate a memory system, with reproduction code
 - **The production patterns** — the ten things that separate a working system from a quietly-degrading one
 - **The 2027 outlook** — native memory in the model API, portable identity, continual learning
+- **The 2026 frontier** — Mem0 1.2 graph leap, Letta 1.0 "agent OS", the Agent File (.af) standard, Engram LOCOMO SOTA, the TTT-Linear + Hyena 2 architectural shift, native memory in Claude 4 / GPT-5 / Gemini 2.5
 
 ---
 
@@ -31,6 +32,7 @@ This category covers the memory layer end-to-end:
 | 03 | [Technical Deep-Dive — Extraction, Dedup, Retrieval](./03-Technical-Deep-Dive-Extraction-Dedup-Retrieval.md) | ~480 | The three-stage pipeline, extraction prompts, importance scoring, dedup prompts, conflict resolution, the storage schema, vector+graph+relational hybrid, the re-ranker, token-budget aware retrieval, hierarchical summarization, cold-start, common failure modes |
 | 04 | [Tools, Evaluation, and the LOCOMO Benchmark](./04-Tools-and-Evaluation.md) | ~400 | The LOCOMO benchmark, reproduction recipe, hands-on comparison of Mem0/Zep/Letta/LangMem on long-conversation memory tasks, custom evaluation patterns |
 | 05 | [Production Patterns, Anti-Patterns, and 2027 Outlook](./05-Production-Patterns-and-Future-Outlook.md) | ~430 | The 10 production patterns (async write, importance filter, source provenance, verification, fact audit, user transparency, tenant isolation, cost budgeting, per-tenant model selection, observability), the 7 anti-patterns, the 2027 outlook (native memory in model API, portable identity, memory + workflows, continual learning, regulation), the builder's checklist |
+| 06 | [Agent Memory 2026 Frontier](./06-Agent-Memory-2026-Frontier.md) | ~1,580 | The 2026 H1 timeline, the Mem0 1.2 graph leap (graph store + procedural memory + ACID), the Letta 1.0 "agent OS" moment (hierarchical summary + Agent File .af), Zep/Graphiti v2 temporal graph, Cognee v2 KG-first, Engram LOCOMO SOTA (0.84, +20% on Mem0), the challenger cohort (Mnemora, Memv, Lore, Sediment, Soul, Mnemosyne), the TTT-Linear + Hyena 2 + Mamba-3 architectural frontier, the visual-memory debate, native memory in Claude 4 / GPT-5 / Gemini 2.5, the LOCOMO-2026 leaderboard, the 8 2026 production patterns, the 7 2026 anti-patterns, the H2 2026 + 2027 outlook, the cross-reference map to 17 library docs |
 
 ---
 
