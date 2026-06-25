@@ -16,6 +16,8 @@ Real-world AI applications across industries. This directory covers practical de
 - Government & Public Sector
 - AI in Cybersecurity
 - Embodied AI & Industries
+- **Healthcare Operational AI (2026 Frontier)** — ambient docs, RCM, prior auth, coding, claims, patient access, payer AI
+- **Embodied AI & Robotics (2026 Frontier)** — VLA foundation models (π0.5, OpenVLA 2, RDT-1B, GR00T N1.5), humanoid production ramps, Robot Brain 2026 leaderboard, EU AI Act Title VIII
 
 Each document explores the specific AI techniques, architectures, and deployment patterns used in that domain.
 
@@ -37,3 +39,4 @@ Each document explores the specific AI techniques, architectures, and deployment
 | 12 | `12-AI-Cybersecurity.md` | AI in cybersecurity |
 | 13 | `13-Embodied-AI-Industries.md` | Embodied AI & robotics industries |
 | 14 | `14-AI-Healthcare-Operational-2026.md` | **2026 healthcare operational AI frontier** (ambient docs, RCM, PA, coding, claims, patient access, payer AI) |
+| 15 | `15-AI-Embodied-AI-and-Robotics-2026-Frontier.md` | **2026 embodied AI & robotics frontier** (VLA foundation models: π0.5, OpenVLA 2, RDT-1B, GR00T N1.5; humanoid production: Figure 02, Apollo, Optimus Gen 3, 1X Neo, Digit v3; Robot Brain 2026 leaderboard; EU AI Act Title VIII; Genesis world model; post-transformer robotics stack) |
