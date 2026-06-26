@@ -47,7 +47,7 @@
     ██████████████████████████████████████████████████
 ```
 
-[![Knowledge Base](https://img.shields.io/badge/KNOWLEDGE_BASE-245_documents-8A2BE2?style=for-the-badge&logo=bookstack&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
+[![Knowledge Base](https://img.shields.io/badge/KNOWLEDGE_BASE-290_documents-8A2BE2?style=for-the-badge&logo=bookstack&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
 [![Topics](https://img.shields.io/badge/DOMAINS-33_topics-00C853?style=for-the-badge&logo=compass&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
 [![Repository Size](https://img.shields.io/badge/SIZE-987_MB-FF6F00?style=for-the-badge&logo=files&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
 [![Web Portal](https://img.shields.io/badge/PORTAL-2,182_assets-1565C0?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
@@ -64,7 +64,7 @@
 
 | Metric | Value |
 |:-------|:------|
-| **📄 Knowledge Documents** | **245** markdown files |
+| **📄 Knowledge Documents** | **290** markdown files |
 | **🗂️ Topic Domains** | **33** directories |
 | **📦 Total Repository Size** | **~987 MB** |
 | **🌐 Web Portal Assets** | **2,182** generated files |
