@@ -15,9 +15,10 @@ Real-world AI applications across industries. This directory covers practical de
 - Energy & Utilities
 - Government & Public Sector
 - AI in Cybersecurity
-- Embodied AI & Industries
-- **Healthcare Operational AI (2026 Frontier)** — ambient docs, RCM, prior auth, coding, claims, patient access, payer AI
+- **Embodied AI & Industries**
+- **Healthcare Operational AI (2026 Frontier)** — ambient documentation, RCM, prior auth, coding, claims, patient access, payer AI
 - **Embodied AI & Robotics (2026 Frontier)** — VLA foundation models (π0.5, OpenVLA 2, RDT-1B, GR00T N1.5), humanoid production ramps, Robot Brain 2026 leaderboard, EU AI Act Title VIII
+- **AI in Education (2026 Frontier)** — Khanmigo 2 SOTA tutor agent, GPT-5-Edu / Claude-for-Education / Gemini-Edu API tier, personalized-learning-agent pattern, teacher co-pilot pattern (MagicSchool 3.5 5M teachers), AI-proof assessment wave, FERPA / COPPA / EU AI Act Article 4 education amendment, the AI-Tutor Revolution That Wasn't skepticism wave
 
 Each document explores the specific AI techniques, architectures, and deployment patterns used in that domain.
 
@@ -40,3 +41,4 @@ Each document explores the specific AI techniques, architectures, and deployment
 | 13 | `13-Embodied-AI-Industries.md` | Embodied AI & robotics industries |
 | 14 | `14-AI-Healthcare-Operational-2026.md` | **2026 healthcare operational AI frontier** (ambient docs, RCM, PA, coding, claims, patient access, payer AI) |
 | 15 | `15-AI-Embodied-AI-and-Robotics-2026-Frontier.md` | **2026 embodied AI & robotics frontier** (VLA foundation models: π0.5, OpenVLA 2, RDT-1B, GR00T N1.5; humanoid production: Figure 02, Apollo, Optimus Gen 3, 1X Neo, Digit v3; Robot Brain 2026 leaderboard; EU AI Act Title VIII; Genesis world model; post-transformer robotics stack) |
+| 16 | `16-AI-Education-2026-Frontier.md` | **2026 AI-in-education frontier** (Khanmigo 2 SOTA tutor agent, GPT-5-Edu / Claude-for-Education / Gemini-Edu API tier, personalized-learning-agent pattern, teacher co-pilot pattern, MagicSchool 3.5 5M teachers, AI-proof assessment wave NWEA / PARCC / AP / ACT / IB, 26% ChatGPT student adoption signal, FERPA / COPPA / EU AI Act Article 4 education amendment, the AI-Tutor Revolution That Wasn't skepticism wave, the 4.2% hand-off rate) |
