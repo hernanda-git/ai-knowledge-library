@@ -47,8 +47,8 @@
     ██████████████████████████████████████████████████
 ```
 
-[![Knowledge Base](https://img.shields.io/badge/KNOWLEDGE_BASE-290_documents-8A2BE2?style=for-the-badge&logo=bookstack&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
-[![Topics](https://img.shields.io/badge/DOMAINS-33_topics-00C853?style=for-the-badge&logo=compass&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
+[![Knowledge Base](https://img.shields.io/badge/KNOWLEDGE_BASE-494_documents-8A2BE2?style=for-the-badge&logo=bookstack&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
+[![Topics](https://img.shields.io/badge/CATEGORIES-46_top-00C853?style=for-the-badge&logo=compass&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
 [![Repository Size](https://img.shields.io/badge/SIZE-987_MB-FF6F00?style=for-the-badge&logo=files&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
 [![Web Portal](https://img.shields.io/badge/PORTAL-2,182_assets-1565C0?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
 [![Last Updated](https://img.shields.io/badge/UPDATED-2026--06--26-F44336?style=for-the-badge&logo=git&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library/commits/main)
@@ -64,8 +64,8 @@
 
 | Metric | Value |
 |:-------|:------|
-| **📄 Knowledge Documents** | **290** markdown files |
-| **🗂️ Topic Domains** | **33** directories |
+| **📄 Knowledge Documents** | **494** markdown files |
+| **🗂️ Topic Categories** | **46** top-level + 26 nested sub-topics |
 | **📦 Total Repository Size** | **~987 MB** |
 | **🌐 Web Portal Assets** | **2,182** generated files |
 | **📐 Core Knowledge Base** | **12 MB** (pure markdown) |
@@ -202,12 +202,16 @@ ai-knowledge-library/
 ├── 📂 31-AI-Workflow-Orchestration/ → Durable execution, Temporal
 ├── 📂 32-Agent-Memory-Systems/      → Memory architectures
 │
-├── 📄 09-Evolution-of-AI-Adoption.md
-├── 📄 Complete-Study-Reference.html
+├── 📄 09-Evolution-of-AI-Adoption.md  →  _Meta/
+├── 📄 Complete-Study-Reference.html  →  _Meta/
 ├── 📄 README.md                     # ← You are here
+├── 📄 CATALOG.md                   # ← Full structure index + merge map (auto-generated)
+├── 📂 _Meta/                       # Operational artifacts (cron gap-reports, HTML study ref)
 ├── 📂 ai-library/                   # → Web portal generator & static site
 └── 📂 .github/                      # Workflows, CI
 ```
+
+> **Structure note (post-cleanup):** The 70 legacy topic folders have been consolidated into **46 top-level categories with 26 nested sub-topics** — no files were deleted, only reorganized. Removed number collisions (`28/46/49` each appeared twice) by nesting the redundant topic under its canonical parent (e.g. `69-GraphRAG → 04-RAG/`, industry deep-dives `47/63/65/67/68/70 → 11-AI-Applications/`). Folders `01`–`10` are frozen because `ai-library/generate.py` reads them by name; everything `11`+ is freely rearrangeable. See **`CATALOG.md`** for the full map.
 
 ---
 
