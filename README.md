@@ -47,11 +47,11 @@
     ██████████████████████████████████████████████████
 ```
 
-[![Knowledge Base](https://img.shields.io/badge/KNOWLEDGE_BASE-494_documents-8A2BE2?style=for-the-badge&logo=bookstack&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
-[![Topics](https://img.shields.io/badge/CATEGORIES-46_top-00C853?style=for-the-badge&logo=compass&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
-[![Repository Size](https://img.shields.io/badge/SIZE-987_MB-FF6F00?style=for-the-badge&logo=files&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
+[![Knowledge Base](https://img.shields.io/badge/KNOWLEDGE_BASE-509_documents-8A2BE2?style=for-the-badge&logo=bookstack&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
+[![Topics](https://img.shields.io/badge/CATEGORIES-49_top-00C853?style=for-the-badge&logo=compass&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
+[![Repository Size](https://img.shields.io/badge/SIZE-1.0_GB-FF6F00?style=for-the-badge&logo=files&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
 [![Web Portal](https://img.shields.io/badge/PORTAL-2,182_assets-1565C0?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
-[![Last Updated](https://img.shields.io/badge/UPDATED-2026--06--26-F44336?style=for-the-badge&logo=git&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library/commits/main)
+[![Last Updated](https://img.shields.io/badge/UPDATED-2026--07--21-F44336?style=for-the-badge&logo=git&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library/commits/main)
 [![License](https://img.shields.io/badge/LICENSE-Open_Knowledge-424242?style=for-the-badge&logo=creativecommons&logoColor=white)](https://github.com/hernanda-git/ai-knowledge-library)
 
 ---
@@ -64,8 +64,8 @@
 
 | Metric | Value |
 |:-------|:------|
-| **📄 Knowledge Documents** | **494** markdown files |
-| **🗂️ Topic Categories** | **46** top-level + 26 nested sub-topics |
+| **📄 Knowledge Documents** | **509** markdown files |
+| **🗂️ Topic Categories** | **49** top-level + 28 nested sub-topics |
 | **📦 Total Repository Size** | **~987 MB** |
 | **🌐 Web Portal Assets** | **2,182** generated files |
 | **📐 Core Knowledge Base** | **12 MB** (pure markdown) |
@@ -143,6 +143,14 @@ Each directory is a **wing of the library**, dedicated to a pillar of AI knowled
 | `31-AI-Workflow-Orchestration` | Durable Execution, Temporal, LangGraph |
 | `32-Agent-Memory-Systems` | Memory Architectures, RAG++ for Agents |
 
+### BEYOND HUMAN INTELLIGENCE — *The Next Epoch*
+
+| Wing | Contents |
+|:-----|:---------|
+| `75-Quantum-AI-and-Quantum-Machine-Learning` | Quantum ML, QNNs, QKernels, hybrid quantum-classical, fault-tolerant QML |
+| `76-AGI-ASI-Superintelligence-and-the-Singularity` | AGI timelines, ASI, superalignment, intelligence explosion |
+| `77-Beyond-Human-AI-Consciousness-and-Transhumanism` | Machine consciousness, neuromorphic, BCIs, transhumanism, digital immortality |
+
 ---
 
 ## 🌐 | THE AI LIBRARY PORTAL
@@ -202,6 +210,10 @@ ai-knowledge-library/
 ├── 📂 31-AI-Workflow-Orchestration/ → Durable execution, Temporal
 ├── 📂 32-Agent-Memory-Systems/      → Memory architectures
 │
+├── 📂 75-Quantum-AI/                 → Quantum ML, QNNs, QKernels, QNLP 🔮
+├── 📂 76-AGI-ASI-Superintelligence/  → AGI, ASI, singularity, superalignment 🧠
+├── 📂 77-Beyond-Human-AI/            → Consciousness, transhumanism, BCIs 🌌
+│
 ├── 📄 09-Evolution-of-AI-Adoption.md  →  _Meta/
 ├── 📄 Complete-Study-Reference.html  →  _Meta/
 ├── 📄 README.md                     # ← You are here
@@ -211,7 +223,7 @@ ai-knowledge-library/
 └── 📂 .github/                      # Workflows, CI
 ```
 
-> **Structure note (post-cleanup):** The 70 legacy topic folders have been consolidated into **46 top-level categories with 26 nested sub-topics** — no files were deleted, only reorganized. Removed number collisions (`28/46/49` each appeared twice) by nesting the redundant topic under its canonical parent (e.g. `69-GraphRAG → 04-RAG/`, industry deep-dives `47/63/65/67/68/70 → 11-AI-Applications/`). Folders `01`–`10` are frozen because `ai-library/generate.py` reads them by name; everything `11`+ is freely rearrangeable. See **`CATALOG.md`** for the full map.
+> **Structure note (post-cleanup):** The 70 legacy topic folders have been consolidated into **49 top-level categories with 28 nested sub-topics** — no files were deleted, only reorganized. Three new wings added on Jul 21, 2026: **Quantum AI**, **AGI/ASI/Superintelligence**, and **Beyond Human Intelligence** (consciousness, transhumanism, BCIs). Folders `01`–`10` are frozen because `ai-library/generate.py` reads them by name; everything `11`+ is freely rearrangeable. See **`CATALOG.md`** for the full map.
 
 ---
 
@@ -238,7 +250,7 @@ cd ai-library && python generate.py   # Rebuilds from all markdown files
 
 | Attribute | Detail |
 |:----------|:-------|
-| **Breadth** | 33 domains spanning every AI subfield from foundations to cutting-edge frontiers |
+| **Breadth** | 36 domains spanning every AI subfield from foundations to cutting-edge frontiers, including quantum AI, AGI/ASI, and beyond-human intelligence |
 | **Depth** | Each topic includes theory, implementation patterns, real-world metrics, and practitioner insights |
 | **Currency** | Updated daily via automated gap analysis — latest frontiers as of **June 2026** |
 | **Structure** | Every document is self-contained and cross-linked within its directory |
@@ -258,12 +270,15 @@ cd ai-library && python generate.py   # Rebuilds from all markdown files
 
 ## 🗺️ | ROADMAP
 
-- [x] 33 topic domains across all major AI subfields
+- [x] 36 topic domains across all major AI subfields
 - [x] Automated daily gap analysis with frontier tracking
 - [x] Rendered static web portal
 - [x] Industry playbooks and business models
 - [x] Security, regulation, and trust frameworks
 - [x] Reasoning, SLMs, workflow orchestration, agent memory
+- [x] **🔮 Quantum AI & Quantum Machine Learning** *(NEW — Jul 2026)*
+- [x] **🧠 AGI, ASI & The Singularity** *(NEW — Jul 2026)*
+- [x] **🌌 Beyond Human — Consciousness, Transhumanism, BCIs** *(NEW — Jul 2026)*
 - [ ] **MCP server for AI-agent consumption**
 - [ ] **Embedded vector search** (Qdrant / Chroma)
 - [ ] **Obsidian vault integration**

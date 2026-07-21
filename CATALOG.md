@@ -5,7 +5,7 @@ topics were *nested* inside their canonical parent category (e.g. `69-GraphRAG` 
 Folders `01`–`10` are frozen (the web-portal generator in `ai-library/generate.py` reads them directly); folders `11`+ are freely rearrangeable.
 
 
-## Top-Level Categories (46) + Nested Sub-Topics (28)
+## Top-Level Categories (49) + Nested Sub-Topics (28)
 
 - **`01-Foundations/`** — ML theory, DL, Data Engineering, RL, GNNs, Math, Causal Inference, Federated Learning  _(10 doc(s))_
 - **`02-LLMs/`** — Transformers, Model Families, Tokenization, Quantization, NLP, (+ Multi-Model Orchestration)  _(10 doc(s) + 1 sub-topic(s))_
@@ -79,6 +79,21 @@ Folders `01`–`10` are frozen (the web-portal generator in `ai-library/generate
   - `→ 43-AI-Data-Provenance-and-Content-Authenticity/` _(5 doc(s))_
 - **`60-Physical-AI-and-Embodied-Intelligence/`** — Embodied / physical AI  _(5 doc(s))_
 - **`62-Edge-AI-and-On-Device-Inference/`** — Edge / on-device inference  _(5 doc(s))_
+- **`63-GPU-Kernel-and-Inference-Performance-Engineering/`** — GPU kernel design, CUDA, inference optimization  _(5 doc(s))_
+- **`64-Model-Fine-Tuning-and-Post-Training/`** — Fine-tuning, LoRA, RLHF, DPO  _(5 doc(s))_
+- **`65-AI-for-Cybersecurity/`** — AI for cyber defense  _(5 doc(s))_
+- **`66-Computer-Vision/`** — Classical & modern CV  _(5 doc(s))_
+- **`67-AI-Product-Management/`** — AI product strategy  _(5 doc(s))_
+- **`68-Context-Engineering/`** — Context window optimization  _(5 doc(s))_
+- **`69-AI-Evaluation-and-LLM-Testing/`** — LLM testing, evaluation  _(5 doc(s))_
+- **`70-World-Models/`** — World models, simulation  _(5 doc(s))_
+- **`71-Diffusion-and-Masked-Generative-LMs/`** — Diffusion LMs  _(5 doc(s))_
+- **`72-Agentic-Search-and-Deep-Research/`** — Agentic search  _(5 doc(s))_
+- **`73-Generative-UI-and-AI-Native-Design/`** — Generative UI/UX  _(5 doc(s))_
+- **`74-AI-for-Healthcare-and-Clinical-AI/`** — Healthcare AI  _(5 doc(s))_
+- **`75-Quantum-AI-and-Quantum-Machine-Learning/`** — Quantum ML foundations, QNNs, QKernels, QNLP, hybrid quantum-classical architectures, fault-tolerant QML, quantum-inspired ML  _(5 doc(s))_
+- **`76-AGI-ASI-Superintelligence-and-the-Singularity/`** — AGI timelines, ASI theory, intelligence explosion, alignment, superintelligence governance, existential risk  _(5 doc(s))_
+- **`77-Beyond-Human-AI-Consciousness-and-Transhumanism/`** — Machine consciousness, neuromorphic computing, brain-computer interfaces, transhumanism, digital immortality, AI philosophy, space AI, bio-AI  _(5 doc(s))_
 
 ## Meta / Non-Knowledge Folders
 
