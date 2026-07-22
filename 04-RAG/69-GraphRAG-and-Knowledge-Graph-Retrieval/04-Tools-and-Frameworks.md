@@ -223,3 +223,9 @@ Start with vector RAG (../04-RAG/) and add graph only if needed.
 - Eval: `../58-AI-Evaluation-and-Benchmarking-at-Scale/`
 - Cost: `../59-AI-Agent-Financial-Governance-and-Cost-Control/`
 - Security: `../18-Agent-Security-and-Trust/`, `../61-AI-Red-Teaming-for-LLMs/`
+
+---
+**See also:**
+- [07 — RAG and Retrieval Research: The Frontier (2025–2026)](07-Emerging/17-Research-Frontiers-2026/07-RAG-Retrieval-Research.md)
+- [AI-Powered Search: Beyond Traditional RAG](06-Advanced/11-AI-Powered-Search.md)
+- [06 — Enterprise RAG Search System](14-Case-Studies-Real-World-Projects/06-RAG-Search-System.md)

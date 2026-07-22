@@ -601,3 +601,9 @@ Projected Evolution:
 ---
 
 *This document was created as part of the AI Knowledge Library auto-enrichment process on June 30, 2026.*
+
+---
+**See also:**
+- [Multimodal AI: The Convergence of Vision, Language, Audio, and Beyond](50-Multimodal-AI/01-Overview.md)
+- [AI Agent Financial Governance and Cost Control: The Complete Guide](41-AI-Cost-Optimization-and-Enterprise-ROI/59-AI-Agent-Financial-Governance-and-Cost-Control/01-Overview.md)
+- [06 — AI Code Governance, Trust, and Quality Assurance](33-AI-Native-Software-Development/06-AI-Code-Governance-Trust-and-Quality.md)

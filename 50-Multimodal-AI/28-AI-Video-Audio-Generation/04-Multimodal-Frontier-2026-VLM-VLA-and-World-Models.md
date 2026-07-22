@@ -1056,3 +1056,9 @@ For each project, work through this in order:
 ---
 
 *This document complements the library's existing 3,941 lines of multimodal coverage (`06-Advanced/01-Multimodal-AI.md` + `13-Top-Demand/04-Multimodal-AI.md` + `17-Research-Frontiers-2026/04-Multimodal-Research.md` + the 3 docs in `28-AI-Video-Audio-Generation/`). It is the 2026 frontier layer, focused on VLM 2.0, VLA, and world models. See `13-Top-Demand/15-AI-Energy-Sustainability-and-Compute-2026.md` for the GPU / power implications, and `21-AI-Regulation-Antitrust/` for the EU AI Act Article 53 (Aug 2026) regulatory framing.*
+
+---
+**See also:**
+- [09 - Multimodal AI Governance: Governing Vision, Language, and Action](21-AI-Regulation-Antitrust/09-Multimodal-AI-Governance.md)
+- [Multimodal AI: Architectures, Models, and Alignment](06-Advanced/01-Multimodal-AI.md)
+- [04 — Multimodal Research: The Frontier (2025–2026)](07-Emerging/17-Research-Frontiers-2026/04-Multimodal-Research.md)

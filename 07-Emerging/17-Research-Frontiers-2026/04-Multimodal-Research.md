@@ -407,3 +407,9 @@ This file surveys the most impactful multimodal research on arXiv from 2025-2026
 **Key Finding:** Pooling robot demonstration data across 22 embodiments produces a single policy generalizing across hardware — first "foundation model for robotics."
 
 **Implications:** The "data over architecture" paradigm now applies to robotics. Expect a robot foundation model within 12 months.
+
+---
+**See also:**
+- [09 - Multimodal AI Governance: Governing Vision, Language, and Action](21-AI-Regulation-Antitrust/09-Multimodal-AI-Governance.md)
+- [Multimodal AI: The Convergence of Vision, Language, Audio, and Beyond](50-Multimodal-AI/01-Overview.md)
+- [Multimodal AI: Architectures, Models, and Alignment](06-Advanced/01-Multimodal-AI.md)

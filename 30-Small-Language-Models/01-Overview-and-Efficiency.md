@@ -251,3 +251,9 @@ Result: Matches Llama-3-70B on math benchmarks
 ---
 
 *This document is part of the AI Knowledge Library — 30-Small-Language-Models directory.*
+
+---
+**See also:**
+- [03 — Green AI: Sustainable Practices for Model Development and Deployment](42-AI-for-Science-and-Drug-Discovery/35-AI-Energy-and-Sustainability/03-Green-AI.md)
+- [Enterprise AI Deployment: Production Infrastructure and Operations](05-Enterprise/01-Enterprise-AI-Deployment.md)
+- [Applied Reasoning — Use Cases, Distillation & Deployment](29-Reasoning-and-Inference-Scaling/03-Applications-and-Deployment.md)

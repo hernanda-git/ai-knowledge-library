@@ -240,3 +240,9 @@ See `../58-AI-Evaluation-and-Benchmarking-at-Scale/` for harness design. GraphRA
 - Attribution ↔ `../43-AI-Data-Provenance-and-Content-Authenticity/` , `../52-AI-Hallucination-Detection-and-Mitigation/`
 - Incremental memory ↔ `../32-Agent-Memory-Systems/`
 - Evaluation ↔ `../58-AI-Evaluation-and-Benchmarking-at-Scale/`
+
+---
+**See also:**
+- [07 — RAG and Retrieval Research: The Frontier (2025–2026)](07-Emerging/17-Research-Frontiers-2026/07-RAG-Retrieval-Research.md)
+- [AI-Powered Search: Beyond Traditional RAG](06-Advanced/11-AI-Powered-Search.md)
+- [06 — Enterprise RAG Search System](14-Case-Studies-Real-World-Projects/06-RAG-Search-System.md)

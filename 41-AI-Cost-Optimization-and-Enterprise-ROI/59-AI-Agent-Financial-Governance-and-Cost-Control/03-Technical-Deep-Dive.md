@@ -1790,3 +1790,9 @@ class TestCostControlIntegration:
 
 *Last updated: July 2026*
 *Part of the AI Knowledge Library — Category 59: AI Agent Financial Governance and Cost Control*
+
+---
+**See also:**
+- [04 — China AI Governance: State Control, Content Regulation, and Technological Sovereignty](21-AI-Regulation-Antitrust/04-China-AI-Governance.md)
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [03 — Agent-Native Orchestration: LangGraph, Conductor, Mistral Workflows, Mcp-Agent](31-AI-Workflow-Orchestration-and-Durable-Execution/03-Agent-Native-Orchestration.md)

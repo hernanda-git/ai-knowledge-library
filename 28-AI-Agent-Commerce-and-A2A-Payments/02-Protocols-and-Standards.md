@@ -864,3 +864,9 @@ These are the open problems. The next 18 months will see several of them get sol
 ---
 
 *Next: read `03-Wallets-and-Identity.md` to understand the wallet, custody, and identity layers that all these protocols depend on.*
+
+---
+**See also:**
+- [07 — AI Coding Agent Sustainability: Managing Hidden Costs, Code Quality Decay, and Developer Burnout](33-AI-Native-Software-Development/07-AI-Coding-Agent-Sustainability.md)
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [03 — Agent-Native Orchestration: LangGraph, Conductor, Mistral Workflows, Mcp-Agent](31-AI-Workflow-Orchestration-and-Durable-Execution/03-Agent-Native-Orchestration.md)

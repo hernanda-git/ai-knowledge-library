@@ -762,3 +762,9 @@ The alternative to effective international AI governance is a fragmented landsca
 - MIT Press: "The Global Governance of AI" (2024)
 - Carnegie Endowment: "International AI Governance in Practice"
 - Chatham House: "The Bletchley Effect: AI Summit Diplomacy"
+
+---
+**See also:**
+- [AI Agent Financial Governance and Cost Control: The Complete Guide](41-AI-Cost-Optimization-and-Enterprise-ROI/59-AI-Agent-Financial-Governance-and-Cost-Control/01-Overview.md)
+- [06 — AI Code Governance, Trust, and Quality Assurance](33-AI-Native-Software-Development/06-AI-Code-Governance-Trust-and-Quality.md)
+- [AI Governance, Regulation, and Policy](07-Emerging/03-AI-Governance.md)

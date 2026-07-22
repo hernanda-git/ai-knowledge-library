@@ -71,3 +71,9 @@ Track: Cost per unit → Trend over time → Benchmark vs on-premise
 - [ ] Review unused committed capacity monthly
 - [ ] Auto-stop idle training instances
 - [ ] Use batch inference for non-real-time workloads
+
+---
+**See also:**
+- [04 — China AI Governance: State Control, Content Regulation, and Technological Sovereignty](21-AI-Regulation-Antitrust/04-China-AI-Governance.md)
+- [AI Agent Financial Governance and Cost Control: The Complete Guide](41-AI-Cost-Optimization-and-Enterprise-ROI/59-AI-Agent-Financial-Governance-and-Cost-Control/01-Overview.md)
+- [06 — AI Code Governance, Trust, and Quality Assurance](33-AI-Native-Software-Development/06-AI-Code-Governance-Trust-and-Quality.md)

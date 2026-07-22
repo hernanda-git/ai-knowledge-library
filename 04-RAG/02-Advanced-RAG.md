@@ -3624,3 +3624,9 @@ class LatencyBudget:
 18. Anthropic. (2024). "Contextual Retrieval." anthropic.com.
 19. LangChain. (2024). "Advanced RAG Techniques." blog.langchain.dev.
 20. Chen, J., et al. (2024). "A Survey on Retrieval-Augmented Text Generation for Large Language Models."
+
+---
+**See also:**
+- [07 — RAG and Retrieval Research: The Frontier (2025–2026)](07-Emerging/17-Research-Frontiers-2026/07-RAG-Retrieval-Research.md)
+- [AI-Powered Search: Beyond Traditional RAG](06-Advanced/11-AI-Powered-Search.md)
+- [06 — Enterprise RAG Search System](14-Case-Studies-Real-World-Projects/06-RAG-Search-System.md)

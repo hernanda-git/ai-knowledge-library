@@ -246,3 +246,8 @@ The `--gate` step compares against a committed `baseline.json` and exits non-zer
 ## Key Takeaway
 
 > A real eval harness is 20% scoring and 80% engineering discipline: statistical honesty about uncertainty, calibrated judges, sliced reporting, and CI gates. Build the harness once, and every future model/prompt/agent change becomes a measured experiment instead of a gamble.
+
+---
+**See also:**
+- [03 — LLM Architectures 2026: Beyond the Vanilla Transformer](07-Emerging/17-Research-Frontiers-2026/03-LLM-Architectures-2026.md)
+- [04 — Local LLM Indexing and Search](23-Local-AI-Inference-Self-Hosting/04-Local-LLM-Indexing-and-Search.md)

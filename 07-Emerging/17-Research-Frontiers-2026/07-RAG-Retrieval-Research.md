@@ -401,3 +401,9 @@ This file surveys the latest RAG research, covering iterative retrieval methods,
 **Key Finding:** Long-context models match RAG on some QA tasks, but RAG remains superior for large corpora, latency, and cost.
 
 **Implications:** RAG-first, long-context for refinement — hybrid approach gives best accuracy-cost-speed tradeoff.
+
+---
+**See also:**
+- [Advanced RAG (Retrieval-Augmented Generation)](04-RAG/02-Advanced-RAG.md)
+- [AI-Powered Search: Beyond Traditional RAG](06-Advanced/11-AI-Powered-Search.md)
+- [06 — Enterprise RAG Search System](14-Case-Studies-Real-World-Projects/06-RAG-Search-System.md)

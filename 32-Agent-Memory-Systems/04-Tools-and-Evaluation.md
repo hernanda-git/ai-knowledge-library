@@ -398,3 +398,9 @@ For production readiness, supplement LOCOMO with:
 ---
 
 *Next: [05-Production-Patterns-and-Future-Outlook.md](./05-Production-Patterns-and-Future-Outlook.md) — the 12 critical production patterns, common pitfalls, the 2027 outlook, and a builder's checklist.*
+
+---
+**See also:**
+- [07 — AI Coding Agent Sustainability: Managing Hidden Costs, Code Quality Decay, and Developer Burnout](33-AI-Native-Software-Development/07-AI-Coding-Agent-Sustainability.md)
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [03 — Agent-Native Orchestration: LangGraph, Conductor, Mistral Workflows, Mcp-Agent](31-AI-Workflow-Orchestration-and-Durable-Execution/03-Agent-Native-Orchestration.md)

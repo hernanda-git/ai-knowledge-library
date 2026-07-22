@@ -796,3 +796,9 @@ caching:
 > - [04-Multimodal-AI.md](04-Multimodal-AI.md) — Multimodal retrieval  
 > - [07-Fine-Tuning-Custom-Models.md](07-Fine-Tuning-Custom-Models.md) — Embedding model fine-tuning  
 > - [10-Real-Time-AI-Systems.md](10-Real-Time-AI-Systems.md) — Real-time RAG systems
+
+---
+**See also:**
+- [07 — RAG and Retrieval Research: The Frontier (2025–2026)](07-Emerging/17-Research-Frontiers-2026/07-RAG-Retrieval-Research.md)
+- [Advanced RAG (Retrieval-Augmented Generation)](04-RAG/02-Advanced-RAG.md)
+- [AI-Powered Search: Beyond Traditional RAG](06-Advanced/11-AI-Powered-Search.md)

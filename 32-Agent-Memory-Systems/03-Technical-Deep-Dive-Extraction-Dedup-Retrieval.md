@@ -503,3 +503,9 @@ Mem0, Zep, and Letta all ship default UX patterns for cold start. The "implicit 
 ---
 
 *Next: [04-Tools-and-Evaluation.md](./04-Tools-and-Evaluation.md) — the LOCOMO benchmark, reproduction code, and a 2026 evaluation of Mem0, Zep, Letta, and LangMem on long-conversation memory tasks.*
+
+---
+**See also:**
+- [07 — AI Coding Agent Sustainability: Managing Hidden Costs, Code Quality Decay, and Developer Burnout](33-AI-Native-Software-Development/07-AI-Coding-Agent-Sustainability.md)
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [03 — Agent-Native Orchestration: LangGraph, Conductor, Mistral Workflows, Mcp-Agent](31-AI-Workflow-Orchestration-and-Durable-Execution/03-Agent-Native-Orchestration.md)

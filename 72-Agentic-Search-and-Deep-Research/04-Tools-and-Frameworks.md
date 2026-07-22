@@ -186,3 +186,9 @@ This ~80-line script reproduces the core loop: **plan → citeable search → ev
 - **Hallucination**: even flagship products sometimes mis-cite — always spot-check (`52-`).
 
 Next: `05-Future-Outlook.md`.
+
+---
+**See also:**
+- [AI in Education 2026 Frontier — The AI-Tutor Wave, the Skepticism, and the Agentic Pivot](11-AI-Applications/16-AI-Education-2026-Frontier.md)
+- [08 — Agentic Services Pricing: The New Category for AI Agent Monetization](16-AI-Business-Models-Playbooks/08-Agentic-Services-Pricing.md)
+- [Agentic Browser Automation & Computer Use: A 2026 Overview](26-Browser-Based-AI/46-Agentic-Browser-Automation-Computer-Use/01-Overview.md)

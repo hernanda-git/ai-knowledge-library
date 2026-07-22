@@ -1194,3 +1194,8 @@ Local LLM indexing and search has matured into a practical, powerful capability 
 The key to success is choosing the right combination of embedding model, chunking strategy, vector database, and LLM for your specific use case. Start simple (BGE-base + ChromaDB + recursive chunking + Ollama), benchmark on your data, and iterate.
 
 Local RAG is not just a cost-saving measure — it is a privacy-enabling, sovereignty-preserving approach that puts you in full control of your data and your AI infrastructure.
+
+---
+**See also:**
+- [03 — LLM Architectures 2026: Beyond the Vanilla Transformer](07-Emerging/17-Research-Frontiers-2026/03-LLM-Architectures-2026.md)
+- [AI Evaluation and LLM Testing — Overview](69-AI-Evaluation-and-LLM-Testing/01-Overview.md)

@@ -509,3 +509,9 @@ Week 9+: Implement winning pricing
 
 ---
 *Next: Playbook 09 — Funding & Pitch Templates for AI Startups.*
+
+---
+**See also:**
+- [AI in Education 2026 Frontier — The AI-Tutor Wave, the Skepticism, and the Agentic Pivot](11-AI-Applications/16-AI-Education-2026-Frontier.md)
+- [Agentic Browser Automation & Computer Use: A 2026 Overview](26-Browser-Based-AI/46-Agentic-Browser-Automation-Computer-Use/01-Overview.md)
+- [Agentic Search & Deep Research](72-Agentic-Search-and-Deep-Research/01-Overview.md)

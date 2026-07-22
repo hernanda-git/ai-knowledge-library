@@ -105,3 +105,8 @@ The mature workflow is a **flywheel**:
 ## Key Takeaway
 
 > If it isn't measured, it isn't engineered. Evaluation converts LLM development from art into engineering — turning subjective "seems better" into objective, gated, compounding improvement. Teams that build an eval flywheel early ship faster and break less than those who bolt it on after the first production incident.
+
+---
+**See also:**
+- [03 — LLM Architectures 2026: Beyond the Vanilla Transformer](07-Emerging/17-Research-Frontiers-2026/03-LLM-Architectures-2026.md)
+- [04 — Local LLM Indexing and Search](23-Local-AI-Inference-Self-Hosting/04-Local-LLM-Indexing-and-Search.md)

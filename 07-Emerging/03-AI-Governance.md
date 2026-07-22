@@ -950,3 +950,9 @@ Instead of building compliance documentation from scratch, startups can use exis
 | [08-Reference/03-Regulatory-Timeline.md] | Key regulatory dates by jurisdiction |
 |---
 *Document version: 3.0 — June 2026 | Expanded with compliance tooling, enforcement actions, governance technology, §4a Asia-Pacific AI Governance, and §11a AI Governance for Startups and SMBs*
+
+---
+**See also:**
+- [04 — China AI Governance: State Control, Content Regulation, and Technological Sovereignty](21-AI-Regulation-Antitrust/04-China-AI-Governance.md)
+- [AI Agent Financial Governance and Cost Control: The Complete Guide](41-AI-Cost-Optimization-and-Enterprise-ROI/59-AI-Agent-Financial-Governance-and-Cost-Control/01-Overview.md)
+- [06 — AI Code Governance, Trust, and Quality Assurance](33-AI-Native-Software-Development/06-AI-Code-Governance-Trust-and-Quality.md)

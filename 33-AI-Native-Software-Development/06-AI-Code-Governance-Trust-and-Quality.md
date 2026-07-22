@@ -1285,3 +1285,9 @@ For human reviewers evaluating AI-generated code:
 ---
 
 *This document is part of the AI Base Knowledge Library — a comprehensive reference for AI technologies, trends, and best practices.*
+
+---
+**See also:**
+- [04 — China AI Governance: State Control, Content Regulation, and Technological Sovereignty](21-AI-Regulation-Antitrust/04-China-AI-Governance.md)
+- [AI Agent Financial Governance and Cost Control: The Complete Guide](41-AI-Cost-Optimization-and-Enterprise-ROI/59-AI-Agent-Financial-Governance-and-Cost-Control/01-Overview.md)
+- [AI Governance, Regulation, and Policy](07-Emerging/03-AI-Governance.md)

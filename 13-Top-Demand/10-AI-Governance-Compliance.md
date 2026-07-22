@@ -2034,3 +2034,9 @@ Recent enforcement actions demonstrate regulators' increasing willingness to act
 ---
 
 *This document is current as of June 2026. AI governance is rapidly evolving; consult legal counsel for specific compliance obligations. Cross-reference with 05-AI-Safety-Alignment.md for safety-specific technical requirements and with 07-Fine-Tuning-Custom-Models.md for model development compliance.*
+
+---
+**See also:**
+- [04 — China AI Governance: State Control, Content Regulation, and Technological Sovereignty](21-AI-Regulation-Antitrust/04-China-AI-Governance.md)
+- [AI Agent Financial Governance and Cost Control: The Complete Guide](41-AI-Cost-Optimization-and-Enterprise-ROI/59-AI-Agent-Financial-Governance-and-Cost-Control/01-Overview.md)
+- [06 — AI Code Governance, Trust, and Quality Assurance](33-AI-Native-Software-Development/06-AI-Code-Governance-Trust-and-Quality.md)

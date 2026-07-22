@@ -540,3 +540,9 @@ Key developments to monitor:
 ---
 
 **Document metadata**: Created June 2026. Part of the AI Regulation & Antitrust knowledge base. For export controls affecting China, see Document 07. For international governance coordination, see Document 08.
+
+---
+**See also:**
+- [AI Agent Financial Governance and Cost Control: The Complete Guide](41-AI-Cost-Optimization-and-Enterprise-ROI/59-AI-Agent-Financial-Governance-and-Cost-Control/01-Overview.md)
+- [06 — AI Code Governance, Trust, and Quality Assurance](33-AI-Native-Software-Development/06-AI-Code-Governance-Trust-and-Quality.md)
+- [AI Governance, Regulation, and Policy](07-Emerging/03-AI-Governance.md)

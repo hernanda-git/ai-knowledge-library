@@ -165,3 +165,9 @@ As GraphRAG spreads, evaluation shifts from ad-hoc to rigorous:
 - Eval: `../58-AI-Evaluation-and-Benchmarking-at-Scale/`
 - XAI: `../64-AI-Model-Explainability-and-XAI/`
 - Provenance: `../43-AI-Data-Provenance-and-Content-Authenticity/`
+
+---
+**See also:**
+- [07 — RAG and Retrieval Research: The Frontier (2025–2026)](07-Emerging/17-Research-Frontiers-2026/07-RAG-Retrieval-Research.md)
+- [AI-Powered Search: Beyond Traditional RAG](06-Advanced/11-AI-Powered-Search.md)
+- [06 — Enterprise RAG Search System](14-Case-Studies-Real-World-Projects/06-RAG-Search-System.md)

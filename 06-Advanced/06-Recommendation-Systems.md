@@ -1209,3 +1209,9 @@ for item, score in top_k:
 
 ---
 *Document version: 2.0 — June 2026 | Tier 2-3: Gap Fill | Expanded with code examples, session-based recs, cold start, biases, and production architecture*
+
+---
+**See also:**
+- [03 — Technical Deep-Dive: Implementing Production MCP Cloud Infrastructure](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/03-Technical-Deep-Dive.md)
+- [Production Deployment and Security for Browser Automation Agents](26-Browser-Based-AI/46-Agentic-Browser-Automation-Computer-Use/05-Production-Deployment-and-Security.md)
+- [Human-in-the-Loop (HITL) Systems — Production Patterns for 2026](13-Top-Demand/13-Human-in-the-Loop-Systems.md)

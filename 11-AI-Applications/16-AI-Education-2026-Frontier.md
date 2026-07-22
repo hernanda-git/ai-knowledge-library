@@ -1205,3 +1205,9 @@ The 5 H2 2026 + 2027 trends that will define the field:
 5. **The model layer commoditizes, the deployment layer is the moat** (GPT-5.5-Edu, Claude 4.5-Edu, Gemini 2.5-Edu at $0.20-$0.30/M input tokens)
 
 The bottom line: **2026 H1 was the quarter when the AI tutor and the teacher co-pilot both became commodity products. The differentiator is no longer the model — it's the per-student knowledge graph, the curriculum alignment, the assessment rubric, the teacher hand-off protocol, and the FERPA / COPPA / EU AI Act plumbing. The companies that win are the ones that own the data, the curriculum, and the teacher workflow — not the ones that own the model.**
+
+---
+**See also:**
+- [08 — Agentic Services Pricing: The New Category for AI Agent Monetization](16-AI-Business-Models-Playbooks/08-Agentic-Services-Pricing.md)
+- [Agentic Browser Automation & Computer Use: A 2026 Overview](26-Browser-Based-AI/46-Agentic-Browser-Automation-Computer-Use/01-Overview.md)
+- [Agentic Search & Deep Research](72-Agentic-Search-and-Deep-Research/01-Overview.md)

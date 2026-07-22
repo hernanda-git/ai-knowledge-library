@@ -805,3 +805,9 @@ class GreenAIDashboard:
 ---
 
 *Previous: [02-Data-Center-Energy.md](02-Data-Center-Energy.md) | Next: [04-Nuclear-and-Renewable.md](04-Nuclear-and-Renewable.md)*
+
+---
+**See also:**
+- [Enterprise AI Deployment: Production Infrastructure and Operations](05-Enterprise/01-Enterprise-AI-Deployment.md)
+- [Small Language Models — Efficiency, Edge Deployment & On-Device AI](30-Small-Language-Models/01-Overview-and-Efficiency.md)
+- [Applied Reasoning — Use Cases, Distillation & Deployment](29-Reasoning-and-Inference-Scaling/03-Applications-and-Deployment.md)

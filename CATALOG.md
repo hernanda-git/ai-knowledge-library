@@ -99,6 +99,7 @@ Folders `01`–`10` are frozen (the web-portal generator in `ai-library/generate
 
 - **`ai-library/`** — Next.js web-portal generator (`generate.py`) + static `out/` site. Reads folders `01`–`10` directly; `11`+ are not scanned by it.
 - **`_Meta/`** — Operational artifacts moved out of the root: `09-Evolution-of-AI-Adoption.md`, `Complete-Study-Reference.html`, and `cron-reports/` (50 automated gap-analysis reports).
+- **`scripts/`** — Utility scripts: `generate-index.py` (auto-generates `INDEX.md`)
 - **`.venv/`, `.lib/`** — Python runtime for the portal generator (git-ignored in practice).
 - **`snapshots/`** — Local agent/brain state cache (not knowledge content).
 

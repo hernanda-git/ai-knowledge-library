@@ -570,3 +570,9 @@ If you want to go deep in the next 12 months, read these in order:
 ---
 
 *End of Category 28 — AI Agent Commerce and A2A Payments. The next major addition to this category is expected to be a deep-dive on the "Agent-as-Employee" economy in Q4 2026, when the first wave of 2026-born agent workers reaches the 6-month mark and the macroeconomic data is in.*
+
+---
+**See also:**
+- [07 — AI Coding Agent Sustainability: Managing Hidden Costs, Code Quality Decay, and Developer Burnout](33-AI-Native-Software-Development/07-AI-Coding-Agent-Sustainability.md)
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [03 — Agent-Native Orchestration: LangGraph, Conductor, Mistral Workflows, Mcp-Agent](31-AI-Workflow-Orchestration-and-Durable-Execution/03-Agent-Native-Orchestration.md)

@@ -739,3 +739,9 @@ class MultimodalEvaluator:
 *See also: [01-Overview.md](./01-Overview.md) for high-level context, [03-Technical-Deep-Dive.md](./03-Technical-Deep-Dive.md) for implementation details*
 
 *Last updated: July 4, 2026*
+
+---
+**See also:**
+- [09 - Multimodal AI Governance: Governing Vision, Language, and Action](21-AI-Regulation-Antitrust/09-Multimodal-AI-Governance.md)
+- [Multimodal AI: Architectures, Models, and Alignment](06-Advanced/01-Multimodal-AI.md)
+- [04 — Multimodal Research: The Frontier (2025–2026)](07-Emerging/17-Research-Frontiers-2026/04-Multimodal-Research.md)

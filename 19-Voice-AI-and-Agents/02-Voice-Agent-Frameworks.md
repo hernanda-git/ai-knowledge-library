@@ -896,3 +896,9 @@ Measured using standard test calls with identical configurations (Deepgram Nova-
 ---
 
 *This document covers voice agent frameworks in technical depth. For complementary topics, see 03-Text-to-Speech-Advances.md for TTS internals, 04-Speech-to-Text-and-Transcription.md for STT architectures, and 06-Real-Time-Voice-Pipelines.md for infrastructure design.*
+
+---
+**See also:**
+- [07 — AI Coding Agent Sustainability: Managing Hidden Costs, Code Quality Decay, and Developer Burnout](33-AI-Native-Software-Development/07-AI-Coding-Agent-Sustainability.md)
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [03 — Agent-Native Orchestration: LangGraph, Conductor, Mistral Workflows, Mcp-Agent](31-AI-Workflow-Orchestration-and-Durable-Execution/03-Agent-Native-Orchestration.md)

@@ -1355,3 +1355,9 @@ class ConnectionPool:
 
 *Last updated: July 2026*
 *See also: OWASP Top 10 for LLMs, NIST AI Risk Management Framework, EU AI Act compliance guides*
+
+---
+**See also:**
+- [03 — Technical Deep-Dive: Implementing Production MCP Cloud Infrastructure](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/03-Technical-Deep-Dive.md)
+- [Recommendation Systems: Architecture, Algorithms, and Production](06-Advanced/06-Recommendation-Systems.md)
+- [Human-in-the-Loop (HITL) Systems — Production Patterns for 2026](13-Top-Demand/13-Human-in-the-Loop-Systems.md)

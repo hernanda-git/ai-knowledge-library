@@ -797,3 +797,9 @@ Multimodal hallucination remains a critical issue:
 > - [08-Edge-AI-Inference.md](08-Edge-AI-Inference.md) — On-device multimodal inference  
 > - [10-Real-Time-AI-Systems.md](10-Real-Time-AI-Systems.md) — Real-time video/audio processing  
 > - [07-Fine-Tuning-Custom-Models.md](07-Fine-Tuning-Custom-Models.md) — Fine-tuning VLMs
+
+---
+**See also:**
+- [09 - Multimodal AI Governance: Governing Vision, Language, and Action](21-AI-Regulation-Antitrust/09-Multimodal-AI-Governance.md)
+- [Multimodal AI: The Convergence of Vision, Language, Audio, and Beyond](50-Multimodal-AI/01-Overview.md)
+- [Multimodal AI: Architectures, Models, and Alignment](06-Advanced/01-Multimodal-AI.md)

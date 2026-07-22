@@ -702,3 +702,9 @@ EVOLUTION OF BROWSER AUTOMATION:
 ---
 
 *This document is part of the AiBaseKnowledge library. For the latest updates, see the repository README.*
+
+---
+**See also:**
+- [AI in Education 2026 Frontier — The AI-Tutor Wave, the Skepticism, and the Agentic Pivot](11-AI-Applications/16-AI-Education-2026-Frontier.md)
+- [08 — Agentic Services Pricing: The New Category for AI Agent Monetization](16-AI-Business-Models-Playbooks/08-Agentic-Services-Pricing.md)
+- [Agentic Search & Deep Research](72-Agentic-Search-and-Deep-Research/01-Overview.md)

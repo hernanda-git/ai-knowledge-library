@@ -622,3 +622,9 @@ The AgentOps platform landscape is diverse and still maturing. No single platfor
 ---
 
 *Next: [03-Agent-Tracing-and-Observability.md](03-Agent-Tracing-and-Observability.md) — Deep dive into distributed tracing for agent systems with OpenTelemetry instrumentation.*
+
+---
+**See also:**
+- [07 — AI Coding Agent Sustainability: Managing Hidden Costs, Code Quality Decay, and Developer Burnout](33-AI-Native-Software-Development/07-AI-Coding-Agent-Sustainability.md)
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [03 — Agent-Native Orchestration: LangGraph, Conductor, Mistral Workflows, Mcp-Agent](31-AI-Workflow-Orchestration-and-Durable-Execution/03-Agent-Native-Orchestration.md)

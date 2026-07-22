@@ -416,3 +416,8 @@ This file surveys the most impactful architectural papers and results from 2025-
 [20] Guo et al. "Task Vector Fusion: Transferable Task Vectors Across Model Scales." 2025.
 [21] Cheng et al. "Quantization-Aware Training for LLMs: A Comprehensive Survey." 2025.
 [22] Zhang et al. "LiteVL: Efficient Vision-Language Model via Quantization-Aware Training." 2025.
+
+---
+**See also:**
+- [AI Evaluation and LLM Testing — Overview](69-AI-Evaluation-and-LLM-Testing/01-Overview.md)
+- [04 — Local LLM Indexing and Search](23-Local-AI-Inference-Self-Hosting/04-Local-LLM-Indexing-and-Search.md)

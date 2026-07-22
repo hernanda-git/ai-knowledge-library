@@ -651,3 +651,9 @@ Key investors:
 
 *Last updated: July 2026*
 *This document reflects projections based on current research and industry trends. Actual developments may vary.*
+
+---
+**See also:**
+- [AI in Education 2026 Frontier — The AI-Tutor Wave, the Skepticism, and the Agentic Pivot](11-AI-Applications/16-AI-Education-2026-Frontier.md)
+- [08 — Agentic Services Pricing: The New Category for AI Agent Monetization](16-AI-Business-Models-Playbooks/08-Agentic-Services-Pricing.md)
+- [Agentic Search & Deep Research](72-Agentic-Search-and-Deep-Research/01-Overview.md)

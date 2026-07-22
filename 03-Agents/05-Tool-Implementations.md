@@ -1035,3 +1035,9 @@ AI coding tools have access to your entire codebase — making them a potential 
 *Document version: 1.5 → 2.0 — June 2026 | Expanded with §8 Migration and Integration Guide — migration paths, hybrid workflows, CI/CD integration, team adoption recommendations, MCP server portability, decision framework; and §9 Enterprise Governance and Compliance — code ownership, data privacy, audit logging, compliance frameworks, vendor lock-in mitigation, enterprise rollout, cost governance*
 
 *Sources: GitHub repositories (opencode-ai/opencode, charmbracelet/crush, NousResearch/hermes-agent, anthropics/claude-code), official documentation sites, and project READMEs.*
+
+---
+**See also:**
+- [07 — AI Coding Agent Sustainability: Managing Hidden Costs, Code Quality Decay, and Developer Burnout](33-AI-Native-Software-Development/07-AI-Coding-Agent-Sustainability.md)
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [03 — Agent-Native Orchestration: LangGraph, Conductor, Mistral Workflows, Mcp-Agent](31-AI-Workflow-Orchestration-and-Durable-Execution/03-Agent-Native-Orchestration.md)

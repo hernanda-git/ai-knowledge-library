@@ -1908,3 +1908,9 @@ class SearchQualityMonitor:
 ---
 
 > **How to cite this document:** "AI-Powered Search: Beyond Traditional RAG" (June 2026), *AiBaseKnowledge/06-Advanced/11-AI-Powered-Search.md*.
+
+---
+**See also:**
+- [07 — RAG and Retrieval Research: The Frontier (2025–2026)](07-Emerging/17-Research-Frontiers-2026/07-RAG-Retrieval-Research.md)
+- [Advanced RAG (Retrieval-Augmented Generation)](04-RAG/02-Advanced-RAG.md)
+- [06 — Enterprise RAG Search System](14-Case-Studies-Real-World-Projects/06-RAG-Search-System.md)

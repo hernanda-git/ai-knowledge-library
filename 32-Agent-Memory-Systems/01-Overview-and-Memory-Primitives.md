@@ -404,3 +404,9 @@ This document is the conceptual foundation. The rest of the library references i
 ---
 
 *Next: [02-Frameworks-Mem0-Zep-Letta-MemGPT-LangMem.md](./02-Frameworks-Mem0-Zep-Letta-MemGPT-LangMem.md) — a hands-on comparison of the five dominant 2026 memory frameworks, with code, performance numbers, and selection guidance.*
+
+---
+**See also:**
+- [07 — AI Coding Agent Sustainability: Managing Hidden Costs, Code Quality Decay, and Developer Burnout](33-AI-Native-Software-Development/07-AI-Coding-Agent-Sustainability.md)
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [03 — Agent-Native Orchestration: LangGraph, Conductor, Mistral Workflows, Mcp-Agent](31-AI-Workflow-Orchestration-and-Durable-Execution/03-Agent-Native-Orchestration.md)

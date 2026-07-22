@@ -2511,3 +2511,9 @@ result = agent.run_sync("Monitor this run")
 10. AWS. (2024). "Amazon Bedrock Agents." https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html
 11. Agno. (2024). "Agno Documentation." https://docs.agno.com/
 12. Pydantic. (2024). "Pydantic AI Documentation." https://ai.pydantic.dev/
+
+---
+**See also:**
+- [AI in Education 2026 Frontier — The AI-Tutor Wave, the Skepticism, and the Agentic Pivot](11-AI-Applications/16-AI-Education-2026-Frontier.md)
+- [08 — Agentic Services Pricing: The New Category for AI Agent Monetization](16-AI-Business-Models-Playbooks/08-Agentic-Services-Pricing.md)
+- [Agentic Browser Automation & Computer Use: A 2026 Overview](26-Browser-Based-AI/46-Agentic-Browser-Automation-Computer-Use/01-Overview.md)

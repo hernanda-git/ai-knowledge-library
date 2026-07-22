@@ -134,3 +134,9 @@ As the category matures, expect:
 Agentic search and deep research are the **synthesis layer** of the AI stack — the point where retrieval (`04-`), agents (`03-`), memory (`32-`), evaluation (`69-`), and long-context (`36-`) converge into something a knowledge worker can trust. The category will mature from "smart search" into "standing, paying, specialized research collaborators." This library's `72-` category will track that arc.
 
 > See also: `03-Agents/`, `04-RAG/`, `31-AI-Workflow-Orchestration-and-Durable-Execution/`, `69-AI-Evaluation-and-LLM-Testing/`, `28-AI-Agent-Commerce-and-A2A-Payments/`.
+
+---
+**See also:**
+- [AI in Education 2026 Frontier — The AI-Tutor Wave, the Skepticism, and the Agentic Pivot](11-AI-Applications/16-AI-Education-2026-Frontier.md)
+- [08 — Agentic Services Pricing: The New Category for AI Agent Monetization](16-AI-Business-Models-Playbooks/08-Agentic-Services-Pricing.md)
+- [Agentic Browser Automation & Computer Use: A 2026 Overview](26-Browser-Based-AI/46-Agentic-Browser-Automation-Computer-Use/01-Overview.md)

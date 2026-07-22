@@ -101,3 +101,8 @@ Teams that already have rigorous, logged eval pipelines will absorb these requir
 ## Key Takeaway
 
 > Evaluation is graduating from a testing afterthought into core infrastructure — generative, continuous, agent-aware, and increasingly regulated. The durable advantage isn't a benchmark score; it's owning a living, proprietary eval flywheel that improves faster than the models it grades.
+
+---
+**See also:**
+- [03 — LLM Architectures 2026: Beyond the Vanilla Transformer](07-Emerging/17-Research-Frontiers-2026/03-LLM-Architectures-2026.md)
+- [04 — Local LLM Indexing and Search](23-Local-AI-Inference-Self-Hosting/04-Local-LLM-Indexing-and-Search.md)

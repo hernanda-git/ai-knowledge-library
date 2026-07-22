@@ -1743,3 +1743,9 @@ For any AI system operating in the EU, the following checklist is the minimum Ar
 *Last updated: June 18, 2026 | 1,700+ lines covering HITL patterns, regulatory foundations, Magentic-UI architecture, vendor landscape, code examples, evaluation, and 30-day implementation plan*
 
 *Co-author references: EU AI Act Article 14 (2026 enforcement), Microsoft Research Magentic-UI (2025-2026), Human Layer API (YC F24), Surge AI, Scale AI, Argilla, Anthropic Constitutional AI, OpenAI RLHF/DPO, HuggingFace TRL, ISO/IEC 42001:2025.*
+
+---
+**See also:**
+- [03 — Technical Deep-Dive: Implementing Production MCP Cloud Infrastructure](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/03-Technical-Deep-Dive.md)
+- [Recommendation Systems: Architecture, Algorithms, and Production](06-Advanced/06-Recommendation-Systems.md)
+- [Production Deployment and Security for Browser Automation Agents](26-Browser-Based-AI/46-Agentic-Browser-Automation-Computer-Use/05-Production-Deployment-and-Security.md)

@@ -281,3 +281,9 @@ Let me write code to explore this..."""
 ---
 
 *This document is part of the AI Knowledge Library — 29-Reasoning-and-Inference-Scaling directory.*
+
+---
+**See also:**
+- [03 — Green AI: Sustainable Practices for Model Development and Deployment](42-AI-for-Science-and-Drug-Discovery/35-AI-Energy-and-Sustainability/03-Green-AI.md)
+- [Enterprise AI Deployment: Production Infrastructure and Operations](05-Enterprise/01-Enterprise-AI-Deployment.md)
+- [Small Language Models — Efficiency, Edge Deployment & On-Device AI](30-Small-Language-Models/01-Overview-and-Efficiency.md)

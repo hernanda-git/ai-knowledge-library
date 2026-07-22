@@ -977,3 +977,9 @@ Q: What's your primary workload?
 ---
 
 *Document version: 2.5 — June 2026 | Expanded: added §8 Cloud Provider Comparison — GPU instance comparison tables, price-performance analysis, multi-cloud code example, cost optimization strategies, selection flowchart. Previously v2.0.*
+
+---
+**See also:**
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [15 — AI Energy, Sustainability & Compute Infrastructure 2026: The Deep-Dive](13-Top-Demand/15-AI-Energy-Sustainability-and-Compute-2026.md)
+- [01 — Agent Infrastructure & Observability: Overview](20-Agent-Infrastructure-and-Observability/01-Overview.md)

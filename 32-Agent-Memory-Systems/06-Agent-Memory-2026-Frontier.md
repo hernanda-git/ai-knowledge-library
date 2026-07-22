@@ -1574,3 +1574,9 @@ The 2026 memory layer is **the differentiator**, not the bottleneck. Builders wh
 *Document version: 1.0 (June 24, 2026). Part of [`32-Agent-Memory-Systems/`](../32-Agent-Memory-Systems/). Cross-references: 17 internal library docs across 12 categories. Total: ~1,500 lines, 18 sections, 16 code examples, 35+ tables, 50+ cross-references.*
 
 *See also: [`32-Agent-Memory-Systems/05-Production-Patterns-and-Future-Outlook.md`](./05-Production-Patterns-and-Future-Outlook.md) for the pre-2026 baseline, [`32-Agent-Memory-Systems/02-Frameworks-Mem0-Zep-Letta-MemGPT-LangMem.md`](./02-Frameworks-Mem0-Zep-Letta-MemGPT-LangMem.md) for the framework comparison, and [`32-Agent-Memory-Systems/04-Tools-and-Evaluation.md`](./04-Tools-and-Evaluation.md) for the pre-2026 LOCOMO baseline.*
+
+---
+**See also:**
+- [07 — AI Coding Agent Sustainability: Managing Hidden Costs, Code Quality Decay, and Developer Burnout](33-AI-Native-Software-Development/07-AI-Coding-Agent-Sustainability.md)
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [03 — Agent-Native Orchestration: LangGraph, Conductor, Mistral Workflows, Mcp-Agent](31-AI-Workflow-Orchestration-and-Durable-Execution/03-Agent-Native-Orchestration.md)

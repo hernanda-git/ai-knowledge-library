@@ -1187,3 +1187,9 @@ In 2026, AI is no longer a software business — it is an **energy, water, and s
 The practitioner who understands this — who can compute kWh/token, negotiate a PPA, benchmark on Groq vs. H100, schedule a fine-tuning job for low-carbon hours, and report an SCI-compliant carbon footprint — is the practitioner who can ship the next generation of AI products at sustainable cost. The 2026 era is the era of **energy, silicon, and sustainability as first-class artifacts**. The data above is the working playbook as of June 2026. It will evolve; the playbook will not.
 
 — Last updated: June 22, 2026.
+
+---
+**See also:**
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [AI Infrastructure: Compute, Storage, and Networking](05-Enterprise/04-AI-Infrastructure.md)
+- [01 — Agent Infrastructure & Observability: Overview](20-Agent-Infrastructure-and-Observability/01-Overview.md)

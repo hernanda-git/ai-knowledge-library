@@ -198,3 +198,8 @@ Wire this into GitHub Actions so every PR runs the suite and blocks on regressio
 ## Key Takeaway
 
 > Master four primitives — datasets, evaluators, judges, and gates — and you can measure any LLM system. Everything else is refinement. The judge is powerful but biased; always calibrate it against humans, and always slice your metrics instead of trusting a single average.
+
+---
+**See also:**
+- [03 — LLM Architectures 2026: Beyond the Vanilla Transformer](07-Emerging/17-Research-Frontiers-2026/03-LLM-Architectures-2026.md)
+- [04 — Local LLM Indexing and Search](23-Local-AI-Inference-Self-Hosting/04-Local-LLM-Indexing-and-Search.md)

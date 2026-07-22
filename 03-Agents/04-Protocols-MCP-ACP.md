@@ -1119,3 +1119,9 @@ Since ACP is still in an experimental phase, the best approach is:
 ---
 
 *This document is part of the AiBaseKnowledge library. It was compiled from publicly available specifications, documentation, and community resources as of May 2026. Given the rapid evolution of both MCP and ACP, readers should verify specific details against the latest official documentation.*
+
+---
+**See also:**
+- [07 — AI Coding Agent Sustainability: Managing Hidden Costs, Code Quality Decay, and Developer Burnout](33-AI-Native-Software-Development/07-AI-Coding-Agent-Sustainability.md)
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [03 — Agent-Native Orchestration: LangGraph, Conductor, Mistral Workflows, Mcp-Agent](31-AI-Workflow-Orchestration-and-Durable-Execution/03-Agent-Native-Orchestration.md)

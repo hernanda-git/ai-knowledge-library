@@ -423,3 +423,9 @@ The agent-memory layer is now table stakes. The question is no longer "should I 
 ---
 
 *End of category 32 — Agent Memory Systems. For related material, see [31-AI-Workflow-Orchestration-and-Durable-Execution](../31-AI-Workflow-Orchestration-and-Durable-Execution/), [04-RAG](../04-RAG/), and [18-Agent-Security-and-Trust](../18-Agent-Security-and-Trust/).*
+
+---
+**See also:**
+- [07 — AI Coding Agent Sustainability: Managing Hidden Costs, Code Quality Decay, and Developer Burnout](33-AI-Native-Software-Development/07-AI-Coding-Agent-Sustainability.md)
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [03 — Agent-Native Orchestration: LangGraph, Conductor, Mistral Workflows, Mcp-Agent](31-AI-Workflow-Orchestration-and-Durable-Execution/03-Agent-Native-Orchestration.md)

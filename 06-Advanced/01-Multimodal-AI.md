@@ -1968,3 +1968,9 @@ Even aligned models exhibit a "modality gap" — embeddings from different modal
 ---
 
 *This document is part of the AiBaseKnowledge series on Advanced Topics in AI. Last updated: May 2026.*
+
+---
+**See also:**
+- [09 - Multimodal AI Governance: Governing Vision, Language, and Action](21-AI-Regulation-Antitrust/09-Multimodal-AI-Governance.md)
+- [Multimodal AI: The Convergence of Vision, Language, Audio, and Beyond](50-Multimodal-AI/01-Overview.md)
+- [04 — Multimodal Research: The Frontier (2025–2026)](07-Emerging/17-Research-Frontiers-2026/04-Multimodal-Research.md)

@@ -738,3 +738,9 @@ observability:
 > - [06-RAG-Retrieval-Systems.md](06-RAG-Retrieval-Systems.md) — Retrieval integration with agents  
 > - [09-AI-Automation.md](09-AI-Automation.md) — Automated workflows using agents  
 > - [10-Real-Time-AI-Systems.md](10-Real-Time-AI-Systems.md) — Real-time agent deployment
+
+---
+**See also:**
+- [07 — AI Coding Agent Sustainability: Managing Hidden Costs, Code Quality Decay, and Developer Burnout](33-AI-Native-Software-Development/07-AI-Coding-Agent-Sustainability.md)
+- [48 — MCP Cloud Infrastructure & Agent-as-a-Service: The Production Layer of Agentic AI](48-MCP-Cloud-Infrastructure-Agent-as-a-Service/01-Overview.md)
+- [03 — Agent-Native Orchestration: LangGraph, Conductor, Mistral Workflows, Mcp-Agent](31-AI-Workflow-Orchestration-and-Durable-Execution/03-Agent-Native-Orchestration.md)

@@ -195,3 +195,8 @@ See `18-Agent-Security-and-Trust/` and `65-AI-for-Cybersecurity/`.
 ## Key Takeaway
 
 > Don't over-tool. Start with one code-first framework in CI (promptfoo or DeepEval) plus Ragas if you do RAG, and add a hosted platform only when dataset management and team collaboration become the bottleneck. The tool matters far less than the discipline of running evals on every change.
+
+---
+**See also:**
+- [03 — LLM Architectures 2026: Beyond the Vanilla Transformer](07-Emerging/17-Research-Frontiers-2026/03-LLM-Architectures-2026.md)
+- [04 — Local LLM Indexing and Search](23-Local-AI-Inference-Self-Hosting/04-Local-LLM-Indexing-and-Search.md)
